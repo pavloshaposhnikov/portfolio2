@@ -28,20 +28,21 @@
 
 /* Breakpoint mixins */
 
-@mixin media-desktop {
-  @media (min-width: $desktop-breakpoint) {
-    @content;
-  }
-}
 
 @mixin media-tablet {
-  @media (min-width: $tablet-breakpoint) {
+  @media (max-width: $tablet-breakpoint) {
     @content;
   }
 }
 
-@mixin media-mobile-height {
-  @media (max-height: $mobile-height-breakpoint) {
+@mixin media-mobile-low {
+  @media (max-width: $mobile-low-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-breakpoint) {
     @content;
   }
 }

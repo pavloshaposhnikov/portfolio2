@@ -1,0 +1,130 @@
+/* Breakpoint mixins */
+/* line 1, layout/layout.scss */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 9, layout/layout.scss */
+html, body {
+  overflow-x: hidden;
+  width: 100%; }
+
+/* line 14, layout/layout.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  background-color: #d1d1d1;
+  min-height: 100vh; }
+
+/* line 23, layout/layout.scss */
+a, button, input, select {
+  outline: none;
+  border: none; }
+
+/* line 28, layout/layout.scss */
+a {
+  text-decoration: none;
+  color: #7A7A7A; }
+
+/* line 33, layout/layout.scss */
+ul, li {
+  list-style-type: none; }
+
+/* line 37, layout/layout.scss */
+details, summary {
+  outline: none;
+  border: none; }
+
+/*========================
+        Common Styles
+==========================*/
+/* line 46, layout/layout.scss */
+.main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 58px;
+  padding-right: 48px; }
+
+/* line 54, layout/layout.scss */
+.no-scroll {
+  overflow: hidden;
+  position: fixed; }
+
+/* line 1, layout/layout.scss */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 9, layout/layout.scss */
+html, body {
+  overflow-x: hidden;
+  width: 100%; }
+
+/* line 14, layout/layout.scss */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  background-color: #d1d1d1;
+  min-height: 100vh; }
+
+/* line 23, layout/layout.scss */
+a, button, input, select {
+  outline: none;
+  border: none; }
+
+/* line 28, layout/layout.scss */
+a {
+  text-decoration: none;
+  color: #7A7A7A; }
+
+/* line 33, layout/layout.scss */
+ul, li {
+  list-style-type: none; }
+
+/* line 37, layout/layout.scss */
+details, summary {
+  outline: none;
+  border: none; }
+
+/*========================
+        Common Styles
+==========================*/
+/* line 46, layout/layout.scss */
+.main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 58px;
+  padding-right: 48px; }
+
+/* line 54, layout/layout.scss */
+.no-scroll {
+  overflow: hidden;
+  position: fixed; }
+
+/* line 3, layout/header/header.scss */
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/*# sourceMappingURL=main.css.map */

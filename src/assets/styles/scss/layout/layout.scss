@@ -12,12 +12,15 @@ html, body {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  position: relative;
+  font-family: 'Prompt', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #000;
-  background-color: $white;
+  color: rgb(25, 25, 25);
+  background-color: $background-color;
   min-height: 100vh;
+  cursor: none;
+  isolation: isolate;
 }
 
 a, button, input, select {
@@ -39,6 +42,21 @@ details, summary {
   border: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-moz-selection {
+  background-color: #191919;
+  color: $white;
+}
+
+::selection {
+  background-color: #191919;
+  color: $white;
+}
+
 /*========================
         Common Styles
 ==========================*/
@@ -49,9 +67,31 @@ details, summary {
   margin-right: auto;
   padding-left: 48px;
   padding-right: 48px;
+
+  @include media-mobile {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 .no-scroll {
   overflow: hidden;
   position: fixed;
+}
+
+.cursor {
+  position: fixed;
+  border-radius: 100%;
+  transition: all .25s cubic-bezier(.215, .61, .355, 1);
+  transform: scale(1) translateZ(0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 99;
+  width: 26px;
+  height: 26px;
+  background-color: #222222;
+  opacity: 0.1;
 }

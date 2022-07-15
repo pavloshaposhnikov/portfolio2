@@ -15,46 +15,203 @@ html, body {
 
 /* line 14, ../scss/layout/layout.scss */
 body {
-  font-family: 'Nunito', sans-serif;
+  position: relative;
+  font-family: 'Prompt', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: #000;
-  background-color: #fff;
-  min-height: 100vh; }
+  color: #191919;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  cursor: none;
+  isolation: isolate; }
 
-/* line 23, ../scss/layout/layout.scss */
+/* line 26, ../scss/layout/layout.scss */
 a, button, input, select {
   outline: none;
   border: none; }
 
-/* line 28, ../scss/layout/layout.scss */
+/* line 31, ../scss/layout/layout.scss */
 a {
   text-decoration: none;
-  color: #7A7A7A; }
+  color: #393939; }
 
-/* line 33, ../scss/layout/layout.scss */
+/* line 36, ../scss/layout/layout.scss */
 ul, li {
   list-style-type: none; }
 
-/* line 37, ../scss/layout/layout.scss */
+/* line 40, ../scss/layout/layout.scss */
 details, summary {
   outline: none;
   border: none; }
 
+/* line 45, ../scss/layout/layout.scss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0; }
+
+/* line 50, ../scss/layout/layout.scss */
+::-moz-selection {
+  background-color: #191919;
+  color: #fff; }
+
+/* line 55, ../scss/layout/layout.scss */
+::-moz-selection {
+  background-color: #191919;
+  color: #fff; }
+::selection {
+  background-color: #191919;
+  color: #fff; }
+
 /*========================
         Common Styles
 ==========================*/
-/* line 46, ../scss/layout/layout.scss */
+/* line 64, ../scss/layout/layout.scss */
 .main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 48px;
   padding-right: 48px; }
+  @media (max-width: 768px) {
+    /* line 64, ../scss/layout/layout.scss */
+    .main {
+      padding-left: 23px;
+      padding-right: 23px; } }
 
-/* line 54, ../scss/layout/layout.scss */
+/* line 77, ../scss/layout/layout.scss */
 .no-scroll {
   overflow: hidden;
   position: fixed; }
+
+/* line 82, ../scss/layout/layout.scss */
+.cursor {
+  position: fixed;
+  border-radius: 100%;
+  -webkit-transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 99;
+  width: 26px;
+  height: 26px;
+  background-color: #222222;
+  opacity: 0.1; }
+
+/* line 1, ../scss/layout/header/header.scss */
+.header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  position: fixed; }
+  @media (max-width: 768px) {
+    /* line 1, ../scss/layout/header/header.scss */
+    .header {
+      padding-left: 23px;
+      padding-right: 23px; } }
+  /* line 14, ../scss/layout/header/header.scss */
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    /* line 19, ../scss/layout/header/header.scss */
+    .header__inner .header__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      /* line 22, ../scss/layout/header/header.scss */
+      .header__inner .header__info p {
+        max-width: 130px;
+        font-family: 'Lusitana', serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #393939; }
+        /* line 29, ../scss/layout/header/header.scss */
+        .header__inner .header__info p:first-child {
+          margin-right: 45px; }
+        @media (max-width: 768px) {
+          /* line 33, ../scss/layout/header/header.scss */
+          .header__inner .header__info p:nth-child(2) {
+            display: none; } }
+    /* line 41, ../scss/layout/header/header.scss */
+    .header__inner .nav-toggle {
+      font-family: 'Prompt', sans-serif;
+      font-size: 30px;
+      line-height: 42px;
+      border: none;
+      background: none;
+      font-weight: 300; }
+
+/* line 3, ../scss/general/general.scss */
+.section--general .general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 100vh;
+  padding-bottom: 70px; }
+  @media (max-width: 1024px) {
+    /* line 3, ../scss/general/general.scss */
+    .section--general .general {
+      min-height: auto;
+      padding-top: 250px; } }
+  @media (max-width: 768px) {
+    /* line 3, ../scss/general/general.scss */
+    .section--general .general {
+      padding-top: 170px; } }
+  /* line 17, ../scss/general/general.scss */
+  .section--general .general .general__title {
+    font-size: 175px;
+    line-height: 175px;
+    font-weight: 300; }
+    @media (max-width: 1024px) {
+      /* line 17, ../scss/general/general.scss */
+      .section--general .general .general__title {
+        font-size: 97px;
+        line-height: 97px; } }
+    @media (max-width: 768px) {
+      /* line 17, ../scss/general/general.scss */
+      .section--general .general .general__title {
+        font-size: 71px;
+        line-height: 78px; } }
+    @media (max-width: 390px) {
+      /* line 17, ../scss/general/general.scss */
+      .section--general .general .general__title {
+        font-size: 62px;
+        line-height: 74px; } }
+  /* line 38, ../scss/general/general.scss */
+  .section--general .general .general__subtitle {
+    font-size: 50px;
+    font-weight: 300; }
+    @media (max-width: 1024px) {
+      /* line 38, ../scss/general/general.scss */
+      .section--general .general .general__subtitle {
+        font-size: 28px;
+        margin-top: 15px; } }
+    @media (max-width: 768px) {
+      /* line 38, ../scss/general/general.scss */
+      .section--general .general .general__subtitle {
+        font-size: 26px;
+        margin-top: 10px; } }
+    @media (max-width: 390px) {
+      /* line 38, ../scss/general/general.scss */
+      .section--general .general .general__subtitle {
+        font-size: 23px; } }
 
 /*# sourceMappingURL=main.css.map */
