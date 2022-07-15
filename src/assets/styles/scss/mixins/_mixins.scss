@@ -1,0 +1,47 @@
+@mixin flex-align($align-position) {
+  display: flex;
+  align-items: $align-position;
+}
+
+@mixin flex-direction-align($flex-direction, $align-position) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-position;
+}
+
+@mixin flex-justify($justify-position) {
+  display: flex;
+  justify-content: $justify-position;
+}
+
+@mixin flex-justify-align($justify-position, $align-position) {
+  display: flex;
+  justify-content: $justify-position;
+  align-items: $align-position;
+}
+
+@mixin icon-hover {
+  background: #fff;
+  transition: linear 0.3s ease-in;
+  filter: drop-shadow(0px 0px 18px rgba(74, 222, 255, 0.38));
+}
+
+/* Breakpoint mixins */
+
+@mixin media-desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-mobile-height {
+  @media (max-height: $mobile-height-breakpoint) {
+    @content;
+  }
+}
