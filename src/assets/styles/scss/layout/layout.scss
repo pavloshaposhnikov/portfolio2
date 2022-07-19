@@ -16,7 +16,7 @@ body {
   font-family: 'Prompt', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  color: rgb(25, 25, 25);
+  color: #191919;
   background-color: $background-color;
   min-height: 100vh;
   cursor: none;
@@ -26,11 +26,16 @@ body {
 a, button, input, select {
   outline: none;
   border: none;
+  cursor: none;
 }
 
 a {
   text-decoration: none;
-  color: $secondary;
+  color: $grey;
+
+  &:hover {
+    color: $red;
+  }
 }
 
 ul, li {
@@ -48,12 +53,12 @@ details, summary {
 }
 
 ::-moz-selection {
-  background-color: #191919;
+  background-color: $red;
   color: $white;
 }
 
 ::selection {
-  background-color: #191919;
+  background-color: $red;
   color: $white;
 }
 
@@ -79,19 +84,46 @@ details, summary {
   position: fixed;
 }
 
-.cursor {
+.cursor, .aura {
   position: fixed;
   border-radius: 100%;
-  transition: all .25s cubic-bezier(.215, .61, .355, 1);
-  transform: scale(1) translateZ(0);
+  -webkit-transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
   z-index: 99;
-  width: 26px;
-  height: 26px;
+
+  @include media-tablet {
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
   background-color: #222222;
-  opacity: 0.1;
+  -webkit-transition: .2s linear background-color;
+  transition: .2s linear background-color;
+}
+
+.cursor.is-active {
+  background-color: $red;
+}
+
+.aura {
+  width: 32px;
+  height: 32px;
+  background-color: #222222;
+  opacity: 0.5;
+  -webkit-transform: translate(-12px, -12px);
+  transform: translate(-12px, -12px);
+  mix-blend-mode: difference;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }

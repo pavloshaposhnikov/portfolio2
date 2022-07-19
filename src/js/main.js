@@ -8,13 +8,70 @@ const adaptiveBreakpoint = $(window).width() > 1024;
 // =====================================================
 // Custom cursor
 
-const cursor = $(".cursor");
+    const cursor = $(".cursor");
+    const cursorAura = $(".aura");
+    const backgroundImg = $('.projects__preview');
+    const projectItem = $('.projects__item');
 
 if (adaptiveBreakpoint) {
     onmousemove = function (e){
         cursor.css({
             'left': e.clientX,
             'top': e.clientY,
-        });
+        }),
+            cursorAura.css({
+                'left': e.clientX,
+                'top': e.clientY,
+            })
     };
 };
+
+function myFunction(e) {
+    backgroundImg.css({
+        'left': e.clientX,
+        'top': e.clientY,
+        'opacity': 1,
+    }),
+        cursor.css({
+            'opacity': 0,
+        }),
+        cursorAura.css({
+            'opacity': 0,
+        })
+};
+
+function myLeaveFunction(e) {
+    backgroundImg.css({
+        'opacity': 0,
+    }),
+        cursor.css({
+            'opacity': 1,
+        }),
+        cursorAura.css({
+            'opacity': 1,
+        })
+};
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 450) {
+            $('.header__inner').addClass('scrolled');
+            $('.header__info').fadeOut(0);
+        } else {
+            $('.header__inner').removeClass('scrolled');
+            $('.header__info').fadeIn(0);
+        }
+    });
+});
+
+// const tl = gsap.timeline();
+//
+// tl.from(".general__title", 1.8, {
+//     y: 100,
+//     ease: "power4.out",
+//     delay: 1,
+//     skewY: 7,
+//     stagger: {
+//         amount: 0.3
+//     }
+// })

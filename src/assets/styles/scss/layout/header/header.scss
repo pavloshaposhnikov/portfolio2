@@ -13,8 +13,9 @@
 
   &__inner {
     @include flex-justify-align(space-between, center);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 48px;
 
     .header__info {
       display: flex;
@@ -38,13 +39,86 @@
       }
     }
 
-    .nav-toggle {
+    .menu-btn {
       font-family: 'Prompt', sans-serif;
       font-size: 30px;
       line-height: 42px;
       border: none;
       background: none;
       font-weight: 300;
+      overflow-x: hidden;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    .menu-btn.is-active, .header__info.is-active p {
+      color: $background-color;
+    }
+
+    .menu-btn.is-active:hover {
+      color: $red;
     }
   }
+
+  &__inner.scrolled {
+    justify-content: flex-end;
+  }
+}
+
+.nav {
+  @include flex-align(center);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  background-color: $grey;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .375s;
+  width: 100vw;
+  height: 100vh;
+
+  &__item {
+    font-size: 175px;
+    line-height: 180px;
+    font-weight: 300;
+
+    @include media-tablet {
+      font-size: 130px;
+      line-height: 155px;
+    }
+
+    @include media-mobile {
+      font-size: 82px;
+      line-height: 90px;
+    }
+
+    @include media-mobile-low {
+      font-size: 71px;
+      line-height: 80px;
+    }
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    color: $background-color;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.nav.is-active--nav {
+  visibility: visible;
+  opacity: 1;
 }

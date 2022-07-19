@@ -4,7 +4,73 @@
         folio — 2022</p>
         <p>front-end developer</p>
     </div>
-    <button class="nav-toggle">
+    <button class="menu-btn" type="button" id="menu-btn">
         menu
     </button>
 </div>
+<nav class="nav main">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="#" class="nav__link">projects</a>
+        </li>
+        <li class="nav__item">
+            <a href="#" class="nav__link">about</a>
+        </li>
+        <li class="nav__item">
+            <a href="#" class="nav__link">skills</a>
+        </li>
+    </ul>
+    <ul class="socials">
+        <li class="socials__item">
+            <a href="#" class="socials__link">GitHub</a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">Linkedin</a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">Instagram</a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">Twitter</a>
+        </li>
+        <li class="socials__item">
+            <a href="#" class="socials__link">Say Hello!</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    $(document).ready(function() {
+        $("#menu-btn").click(function() {
+            if (!$("#menu-btn").data('status')) {
+                $("#menu-btn").html('close');
+                $("#menu-btn").data('status', true);
+            }
+            else {
+                $("#menu-btn").html('menu');
+                $("#menu-btn").data('status', false);
+            }
+        });
+    });
+</script>
+
+<script>
+    $('.menu-btn, .nav__link').on('click', function(event){
+        $('.menu-btn').toggleClass('is-active');
+        $('.cursor').toggleClass('is-active');
+        $('.header__info').toggleClass('is-active');
+        $('.nav').toggleClass('is-active--nav');
+
+        if ($('.menu-btn').hasClass('is-active')) {
+            $('#body').addClass('no-scroll');
+            $(".nav__link").removeClass("is-active");
+            $('.nav').removeClass("is-active");
+        } else {
+            $('#body').removeClass('no-scroll');
+            $('.nav').removeClass('is-active');
+            $('.menu-btn').removeClass('is-active');
+            $('.header__info').removeClass('is-active');
+            $('.cursor').removeClass('is-active');
+        }
+    });
+</script>
