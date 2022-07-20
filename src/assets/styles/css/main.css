@@ -199,12 +199,18 @@ details, summary {
   padding-right: 48px;
   position: fixed;
   z-index: 11; }
+  @media (max-width: 1024px) {
+    /* line 1, ../scss/layout/header/header.scss */
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0; } }
   @media (max-width: 768px) {
     /* line 1, ../scss/layout/header/header.scss */
     .header {
       padding-left: 23px;
       padding-right: 23px; } }
-  /* line 15, ../scss/layout/header/header.scss */
+  /* line 21, ../scss/layout/header/header.scss */
   .header__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,26 +226,26 @@ details, summary {
     height: 48px;
     position: relative;
     z-index: 11; }
-    /* line 23, ../scss/layout/header/header.scss */
+    /* line 29, ../scss/layout/header/header.scss */
     .header__inner .header__info {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      /* line 26, ../scss/layout/header/header.scss */
+      /* line 32, ../scss/layout/header/header.scss */
       .header__inner .header__info p {
         max-width: 130px;
         font-family: 'Lusitana', serif;
         font-size: 18px;
         line-height: 24px;
         color: #393939; }
-        /* line 33, ../scss/layout/header/header.scss */
+        /* line 39, ../scss/layout/header/header.scss */
         .header__inner .header__info p:first-child {
           margin-right: 45px; }
         @media (max-width: 768px) {
-          /* line 37, ../scss/layout/header/header.scss */
+          /* line 43, ../scss/layout/header/header.scss */
           .header__inner .header__info p:nth-child(2) {
             display: none; } }
-    /* line 45, ../scss/layout/header/header.scss */
+    /* line 51, ../scss/layout/header/header.scss */
     .header__inner .menu-btn {
       font-family: 'Prompt', sans-serif;
       font-size: 30px;
@@ -249,30 +255,30 @@ details, summary {
       font-weight: 300;
       overflow-x: hidden;
       color: #191919; }
-      /* line 55, ../scss/layout/header/header.scss */
+      /* line 61, ../scss/layout/header/header.scss */
       .header__inner .menu-btn:hover {
         color: #FF0000; }
         @media (max-width: 1024px) {
-          /* line 55, ../scss/layout/header/header.scss */
+          /* line 61, ../scss/layout/header/header.scss */
           .header__inner .menu-btn:hover {
             color: #191919; } }
-    /* line 64, ../scss/layout/header/header.scss */
+    /* line 70, ../scss/layout/header/header.scss */
     .header__inner .menu-btn.is-active, .header__inner .header__info.is-active p {
       color: whitesmoke; }
-    /* line 68, ../scss/layout/header/header.scss */
+    /* line 74, ../scss/layout/header/header.scss */
     .header__inner .menu-btn.is-active:hover {
       color: #FF0000; }
       @media (max-width: 1024px) {
-        /* line 68, ../scss/layout/header/header.scss */
+        /* line 74, ../scss/layout/header/header.scss */
         .header__inner .menu-btn.is-active:hover {
           color: #fff; } }
-  /* line 77, ../scss/layout/header/header.scss */
+  /* line 83, ../scss/layout/header/header.scss */
   .header__inner.scrolled {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
 
-/* line 82, ../scss/layout/header/header.scss */
+/* line 88, ../scss/layout/header/header.scss */
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,53 +298,53 @@ details, summary {
   transition: all .375s;
   width: 100vw;
   height: 100vh; }
-  /* line 97, ../scss/layout/header/header.scss */
+  /* line 103, ../scss/layout/header/header.scss */
   .nav__item {
     font-size: 175px;
     line-height: 180px;
     font-weight: 300; }
     @media (max-width: 1024px) {
-      /* line 97, ../scss/layout/header/header.scss */
+      /* line 103, ../scss/layout/header/header.scss */
       .nav__item {
         font-size: 130px;
         line-height: 155px; } }
     @media (max-width: 768px) {
-      /* line 97, ../scss/layout/header/header.scss */
+      /* line 103, ../scss/layout/header/header.scss */
       .nav__item {
         font-size: 82px;
         line-height: 90px; } }
     @media (max-width: 390px) {
-      /* line 97, ../scss/layout/header/header.scss */
+      /* line 103, ../scss/layout/header/header.scss */
       .nav__item {
         font-size: 71px;
         line-height: 80px; } }
-    /* line 117, ../scss/layout/header/header.scss */
+    /* line 123, ../scss/layout/header/header.scss */
     .nav__item:first-child {
       margin-bottom: 10px; }
-  /* line 122, ../scss/layout/header/header.scss */
+  /* line 128, ../scss/layout/header/header.scss */
   .nav__link {
     color: whitesmoke; }
-    /* line 125, ../scss/layout/header/header.scss */
+    /* line 131, ../scss/layout/header/header.scss */
     .nav__link:hover {
       color: #FF0000; }
 
-/* line 131, ../scss/layout/header/header.scss */
+/* line 137, ../scss/layout/header/header.scss */
 .nav.is-active--nav {
   visibility: visible;
   opacity: 1; }
 
-/* line 136, ../scss/layout/header/header.scss */
+/* line 142, ../scss/layout/header/header.scss */
 .socials-nav {
   position: absolute;
   right: 48px;
   bottom: 48px; }
   @media (max-width: 1024px) {
-    /* line 136, ../scss/layout/header/header.scss */
+    /* line 142, ../scss/layout/header/header.scss */
     .socials-nav {
       left: 48px;
       bottom: 23px; } }
   @media (max-width: 768px) {
-    /* line 136, ../scss/layout/header/header.scss */
+    /* line 142, ../scss/layout/header/header.scss */
     .socials-nav {
       left: 23px; } }
 

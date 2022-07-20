@@ -7,6 +7,12 @@
   position: fixed;
   z-index: 11;
 
+  @include media-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   @include media-mobile {
     padding-left: 23px;
     padding-right: 23px;
