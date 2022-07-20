@@ -52,12 +52,6 @@
       &:hover, &:active {
         color: $red;
       }
-
-      @media(hover: hover) and (pointer: fine) {
-        .menu-btn:hover {
-          color: $red;
-        }
-      }
     }
 
     .menu-btn.is-active, .header__info.is-active p {
@@ -142,5 +136,11 @@
 
   @include media-mobile {
     left: 23px;
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .menu-btn:hover {
+    color: $red;
   }
 }
