@@ -127,3 +127,62 @@ details, summary {
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
+
+.title {
+  font-size: 175px;
+  line-height: 175px;
+  font-weight: 300;
+
+  @include media-tablet {
+    font-size: 97px;
+    line-height: 97px;
+  }
+
+  @include media-mobile {
+    font-size: 71px;
+    line-height: 78px;
+  }
+
+  @include media-mobile-low {
+    font-size: 62px;
+    line-height: 74px;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 25px;
+
+  &__link {
+    color: $background-color;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+
+    @include media-mobile {
+      font-size: 11px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $background-color;
+      width: 100%;
+
+      @include media-mobile {
+        height: 1px;
+      }
+    }
+  }
+
+  .socials__item:hover .socials__link {
+    background-color: red;
+  }
+
+  .socials__item:hover .socials__link:after {
+    opacity: 0;
+  }
+}

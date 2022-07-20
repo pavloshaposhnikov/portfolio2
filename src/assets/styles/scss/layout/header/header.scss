@@ -122,3 +122,18 @@
   visibility: visible;
   opacity: 1;
 }
+
+.socials-nav {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+
+  @include media-tablet {
+    left: 48px;
+    bottom: 23px;
+  }
+
+  @include media-mobile {
+    left: 23px;
+  }
+}
