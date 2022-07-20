@@ -49,7 +49,7 @@
       overflow-x: hidden;
       color: $grey;
 
-      &:hover {
+      &:hover, &:active {
         color: $red;
       }
     }
