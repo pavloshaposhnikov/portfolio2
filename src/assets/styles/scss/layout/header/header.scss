@@ -51,11 +51,8 @@
 
       &:hover {
         color: $red;
-      }
 
-      @include media-tablet {
-
-        .menu-btn:hover {
+        @include media-tablet {
           color: $grey;
         }
       }
@@ -67,6 +64,10 @@
 
     .menu-btn.is-active:hover {
       color: $red;
+
+      @include media-tablet {
+        color: $white;
+      }
     }
   }
 
