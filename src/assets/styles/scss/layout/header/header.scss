@@ -5,6 +5,7 @@
   padding-left: 48px;
   padding-right: 48px;
   position: fixed;
+  z-index: 11;
 
   @include media-mobile {
     padding-left: 23px;
@@ -16,6 +17,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
     height: 48px;
+    position: relative;
+    z-index: 11;
 
     .header__info {
       display: flex;
@@ -81,14 +84,12 @@
 
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
   text-align: left;
   background-color: $grey;
-  z-index: -1;
   visibility: hidden;
   opacity: 0;
+  z-index: 10;
   transition: all .375s;
   width: 100vw;
   height: 100vh;

@@ -122,8 +122,11 @@
 
 .section--about {
   padding-top: 108px;
+  position: relative;
+  z-index: 1;
 
   .about {
+    position: relative;
 
     &__info {
       margin: 0 auto;
@@ -154,6 +157,11 @@
           font-size: 19px;
           line-height: 29px;
         }
+
+        @include media-mobile-low {
+          font-size: 17px;
+          line-height: 25px;
+        }
       }
 
       &-author {
@@ -169,6 +177,10 @@
           font-size: 20px;
         }
 
+        @include media-mobile-low {
+          font-size: 17px;
+        }
+
         a {
           text-decoration: underline;
         }
@@ -176,18 +188,22 @@
     }
 
     &__contact {
-      margin-top: 900px;
+      padding-top: 900px;
       max-width: 815px;
       width: 100%;
       margin-left: auto;
 
       @include media-tablet {
-        margin-top: 350px;
+        padding-top: 350px;
         max-width: 475px;
       }
 
       @include media-mobile {
-        max-width: 271px;
+        margin-left: unset;
+      }
+
+      @include media-mobile-low {
+        padding-top: 300px;
       }
 
       p {
@@ -202,9 +218,14 @@
         }
 
         @include media-mobile {
-          font-size: 16px;
-          line-height: 19px;
+          font-size: 20px;
+          line-height: 22px;
           font-weight: 300;
+        }
+
+        @include media-mobile-low {
+          font-size: 17px;
+          line-height: 19px;
         }
       }
 
@@ -247,9 +268,34 @@
         font-size: 20px;
       }
 
+      @include media-mobile-low {
+        font-size: 17px;
+      }
+
       &:after {
         background-color: $grey;
       }
     }
+  }
+}
+
+.about__background-img {
+  max-width: 383px;
+  width: 100%;
+  height: 383px;
+  position: fixed;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all .2s linear;
+
+  @include media-tablet {
+    visibility: hidden;
+  }
+
+  img {
+    position: relative;
+    overflow: hidden;
+    transform: scale(1.01);
   }
 }

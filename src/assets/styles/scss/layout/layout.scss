@@ -89,8 +89,6 @@ details, summary {
   border-radius: 100%;
   -webkit-transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
   transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -116,12 +114,15 @@ details, summary {
   background-color: $red;
 }
 
+.cursor.cursor-red {
+  background-color: $red;
+}
+
 .aura {
   width: 32px;
   height: 32px;
   background-color: #222222;
   opacity: 0.5;
-  -webkit-transform: translate(-12px, -12px);
   transform: translate(-12px, -12px);
   mix-blend-mode: difference;
   -webkit-transition: all .3s linear;

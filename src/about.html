@@ -29,16 +29,16 @@
 </head>
 
 <body id="body">
-<div class="cursor"></div>
+<div class="cursor cursor-red"></div>
 <div class="aura"></div>
 <header id="included__header" class="header"></header>
 <main class="main">
     <!--========== Page Content ==========-->
-    <section class="section--about">
+    <section class="section--about" onmousemove="aboutHover(event)">
         <div class="about">
             <h2 class="title">about</h2>
             <div class="about__info">
-                <p class="about__info-text">I’m Pumpa Lumpa, Front-End Developer based in selo Tavriysk.</p>
+                <p class="about__info-text">I’m Pumpa Lumpa, Front-End Developer based in big city Tavriysk.</p>
                 <p class="about__info-text">I consider coding a form of creation and I love to work with crazy designers that push me to think
                     outside the box, so we can bring to life tons of amazing projects.</p>
                 <p class="about__info-text">Besides my passion for coding (as you can see) you could easily find me on a Saturday night singing
@@ -64,6 +64,9 @@
                 <p>I’m open for creative opportunities or for a fun karaoke night.
                 </p>
                 <p>Don’t be shy, <a href="#">say hi!</a></p>
+            </div>
+            <div class="about__background-img">
+                <img src="../src/assets/images/about/profile.png" alt="Preview">
             </div>
         </div>
     </section>

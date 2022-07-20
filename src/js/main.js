@@ -64,14 +64,13 @@ $(document).ready(function() {
     });
 });
 
-// const tl = gsap.timeline();
-//
-// tl.from(".general__title", 1.8, {
-//     y: 100,
-//     ease: "power4.out",
-//     delay: 1,
-//     skewY: 7,
-//     stagger: {
-//         amount: 0.3
-//     }
-// })
+const aboutBackground = $('.about__background-img');
+function aboutHover(e) {
+    aboutBackground.css({
+        'left': e.clientX,
+        'top': e.clientY,
+    }),
+        cursorAura.css({
+            'opacity': 0,
+        })
+};
