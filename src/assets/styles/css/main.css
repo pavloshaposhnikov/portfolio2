@@ -10,10 +10,9 @@
 
 /* line 9, ../scss/layout/layout.scss */
 html, body {
-  overflow-x: hidden;
   width: 100%; }
 
-/* line 14, ../scss/layout/layout.scss */
+/* line 13, ../scss/layout/layout.scss */
 body {
   position: relative;
   font-family: 'Prompt', sans-serif;
@@ -25,40 +24,40 @@ body {
   cursor: none;
   isolation: isolate; }
 
-/* line 26, ../scss/layout/layout.scss */
+/* line 25, ../scss/layout/layout.scss */
 a, button, input, select {
   outline: none;
   border: none;
   cursor: none; }
 
-/* line 32, ../scss/layout/layout.scss */
+/* line 31, ../scss/layout/layout.scss */
 a {
   text-decoration: none;
   color: #191919; }
-  /* line 36, ../scss/layout/layout.scss */
+  /* line 35, ../scss/layout/layout.scss */
   a:hover {
     color: #FF0000; }
 
-/* line 41, ../scss/layout/layout.scss */
+/* line 40, ../scss/layout/layout.scss */
 ul, li {
   list-style-type: none; }
 
-/* line 45, ../scss/layout/layout.scss */
+/* line 44, ../scss/layout/layout.scss */
 details, summary {
   outline: none;
   border: none; }
 
-/* line 50, ../scss/layout/layout.scss */
+/* line 49, ../scss/layout/layout.scss */
 ::-webkit-scrollbar {
   width: 0;
   height: 0; }
 
-/* line 55, ../scss/layout/layout.scss */
+/* line 54, ../scss/layout/layout.scss */
 ::-moz-selection {
   background-color: #FF0000;
   color: #fff; }
 
-/* line 60, ../scss/layout/layout.scss */
+/* line 59, ../scss/layout/layout.scss */
 ::-moz-selection {
   background-color: #FF0000;
   color: #fff; }
@@ -69,7 +68,7 @@ details, summary {
 /*========================
         Common Styles
 ==========================*/
-/* line 69, ../scss/layout/layout.scss */
+/* line 68, ../scss/layout/layout.scss */
 .main {
   width: 100%;
   margin-left: auto;
@@ -77,17 +76,17 @@ details, summary {
   padding-left: 48px;
   padding-right: 48px; }
   @media (max-width: 768px) {
-    /* line 69, ../scss/layout/layout.scss */
+    /* line 68, ../scss/layout/layout.scss */
     .main {
       padding-left: 23px;
       padding-right: 23px; } }
 
-/* line 82, ../scss/layout/layout.scss */
+/* line 81, ../scss/layout/layout.scss */
 .no-scroll {
   overflow: hidden;
   position: fixed; }
 
-/* line 87, ../scss/layout/layout.scss */
+/* line 86, ../scss/layout/layout.scss */
 .cursor, .aura {
   position: fixed;
   border-radius: 100%;
@@ -100,12 +99,12 @@ details, summary {
   pointer-events: none;
   z-index: 99; }
   @media (max-width: 1024px) {
-    /* line 87, ../scss/layout/layout.scss */
+    /* line 86, ../scss/layout/layout.scss */
     .cursor, .aura {
       opacity: 1;
       visibility: hidden; } }
 
-/* line 105, ../scss/layout/layout.scss */
+/* line 104, ../scss/layout/layout.scss */
 .cursor {
   width: 8px;
   height: 8px;
@@ -113,15 +112,15 @@ details, summary {
   -webkit-transition: .2s linear background-color;
   transition: .2s linear background-color; }
 
-/* line 113, ../scss/layout/layout.scss */
+/* line 112, ../scss/layout/layout.scss */
 .cursor.is-active {
   background-color: #FF0000; }
 
-/* line 117, ../scss/layout/layout.scss */
+/* line 116, ../scss/layout/layout.scss */
 .cursor.cursor-red {
   background-color: #FF0000; }
 
-/* line 121, ../scss/layout/layout.scss */
+/* line 120, ../scss/layout/layout.scss */
 .aura {
   width: 32px;
   height: 32px;
@@ -133,44 +132,44 @@ details, summary {
   -webkit-transition: all .3s linear;
   transition: all .3s linear; }
 
-/* line 132, ../scss/layout/layout.scss */
+/* line 131, ../scss/layout/layout.scss */
 .title {
   font-size: 175px;
   line-height: 175px;
   font-weight: 300; }
   @media (max-width: 1024px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 97px;
       line-height: 97px; } }
   @media (max-width: 768px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 71px;
       line-height: 78px; } }
   @media (max-width: 390px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 62px;
       line-height: 74px; } }
 
-/* line 153, ../scss/layout/layout.scss */
+/* line 152, ../scss/layout/layout.scss */
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px; }
-  /* line 157, ../scss/layout/layout.scss */
+  /* line 156, ../scss/layout/layout.scss */
   .socials__link {
     color: whitesmoke;
     font-size: 16px;
     font-weight: 300;
     position: relative; }
     @media (max-width: 768px) {
-      /* line 157, ../scss/layout/layout.scss */
+      /* line 156, ../scss/layout/layout.scss */
       .socials__link {
         font-size: 11px; } }
-    /* line 167, ../scss/layout/layout.scss */
+    /* line 166, ../scss/layout/layout.scss */
     .socials__link:after {
       content: '';
       position: absolute;
@@ -180,13 +179,13 @@ details, summary {
       background-color: whitesmoke;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 167, ../scss/layout/layout.scss */
+        /* line 166, ../scss/layout/layout.scss */
         .socials__link:after {
           height: 1px; } }
-  /* line 182, ../scss/layout/layout.scss */
+  /* line 181, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link {
     background-color: red; }
-  /* line 186, ../scss/layout/layout.scss */
+  /* line 185, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link:after {
     opacity: 0; }
 
