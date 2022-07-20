@@ -49,8 +49,15 @@
       overflow-x: hidden;
       color: $grey;
 
-      &:hover, &:active {
+      &:hover {
         color: $red;
+      }
+
+      @include media-tablet {
+
+        .menu-btn:hover {
+          color: $grey;
+        }
       }
     }
 
@@ -136,11 +143,5 @@
 
   @include media-mobile {
     left: 23px;
-  }
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .menu-btn:hover {
-    color: $red;
   }
 }
