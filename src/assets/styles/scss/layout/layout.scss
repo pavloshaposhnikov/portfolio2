@@ -163,6 +163,10 @@ details, summary {
       font-size: 11px;
     }
 
+    @include media-mobile-low {
+      font-size: 10px;
+    }
+
     &:after {
       content: '';
       position: absolute;

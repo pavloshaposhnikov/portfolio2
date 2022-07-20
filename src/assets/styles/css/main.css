@@ -169,7 +169,11 @@ details, summary {
       /* line 156, ../scss/layout/layout.scss */
       .socials__link {
         font-size: 11px; } }
-    /* line 166, ../scss/layout/layout.scss */
+    @media (max-width: 390px) {
+      /* line 156, ../scss/layout/layout.scss */
+      .socials__link {
+        font-size: 10px; } }
+    /* line 170, ../scss/layout/layout.scss */
     .socials__link:after {
       content: '';
       position: absolute;
@@ -179,13 +183,13 @@ details, summary {
       background-color: whitesmoke;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 166, ../scss/layout/layout.scss */
+        /* line 170, ../scss/layout/layout.scss */
         .socials__link:after {
           height: 1px; } }
-  /* line 181, ../scss/layout/layout.scss */
+  /* line 185, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link {
     background-color: red; }
-  /* line 185, ../scss/layout/layout.scss */
+  /* line 189, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link:after {
     opacity: 0; }
 
@@ -296,7 +300,7 @@ details, summary {
   -webkit-transition: all .375s;
   transition: all .375s;
   width: 100vw;
-  height: 100vh; }
+  min-height: 100vh; }
   /* line 103, ../scss/layout/header/header.scss */
   .nav__item {
     font-size: 175px;
@@ -626,5 +630,4 @@ details, summary {
     overflow: hidden;
     -webkit-transform: scale(1.01);
             transform: scale(1.01); }
-
 /*# sourceMappingURL=main.css.map */
