@@ -245,7 +245,7 @@ details, summary {
       overflow-x: hidden;
       color: #191919; }
       /* line 52, ../scss/layout/header/header.scss */
-      .header__inner .menu-btn:hover {
+      .header__inner .menu-btn:hover, .header__inner .menu-btn:active {
         color: #FF0000; }
     /* line 57, ../scss/layout/header/header.scss */
     .header__inner .menu-btn.is-active, .header__inner .header__info.is-active p {
