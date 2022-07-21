@@ -301,7 +301,7 @@ details, summary {
   -webkit-transition: all .375s;
   transition: all .375s;
   width: 100vw;
-  height: calc(100vh - calc(100vh - 100%)); }
+  height: 100vh; }
   /* line 103, ../scss/layout/header/header.scss */
   .nav__list {
     margin-top: auto; }
@@ -912,4 +912,5 @@ details, summary {
             /* line 556, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item-info .jungles__item-link:hover {
               text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */
