@@ -98,7 +98,7 @@
   z-index: 10;
   transition: all .375s;
   width: 100vw;
-  min-height: 100vh;
+  height: calc(100vh - calc(100vh - 100%));
 
   &__list {
     margin-top: auto;
