@@ -165,7 +165,10 @@ details, summary {
     color: whitesmoke;
     font-size: 16px;
     font-weight: 300;
-    position: relative; }
+    position: relative;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content; }
     @media (max-width: 768px) {
       /* line 157, ../scss/layout/layout.scss */
       .socials__link {
@@ -174,7 +177,7 @@ details, summary {
       /* line 157, ../scss/layout/layout.scss */
       .socials__link {
         font-size: 10px; } }
-    /* line 171, ../scss/layout/layout.scss */
+    /* line 172, ../scss/layout/layout.scss */
     .socials__link:after {
       content: '';
       position: absolute;
@@ -184,13 +187,10 @@ details, summary {
       background-color: whitesmoke;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 171, ../scss/layout/layout.scss */
+        /* line 172, ../scss/layout/layout.scss */
         .socials__link:after {
           height: 1px; } }
-  /* line 186, ../scss/layout/layout.scss */
-  .socials .socials__item:hover .socials__link {
-    background-color: red; }
-  /* line 190, ../scss/layout/layout.scss */
+  /* line 187, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link:after {
     opacity: 0; }
 
@@ -301,7 +301,7 @@ details, summary {
   -webkit-transition: all .375s;
   transition: all .375s;
   width: 100vw;
-  height: 100vh; }
+  min-height: 100vh; }
   /* line 103, ../scss/layout/header/header.scss */
   .nav__item {
     font-size: 175px;
@@ -632,5 +632,270 @@ details, summary {
     overflow: hidden;
     -webkit-transform: scale(1.01);
             transform: scale(1.01); }
+
+/* line 305, ../scss/general/general.scss */
+.section--jungles {
+  background-color: #393939;
+  color: #fff; }
+  /* line 309, ../scss/general/general.scss */
+  .section--jungles .noise {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0; }
+    /* line 319, ../scss/general/general.scss */
+    .section--jungles .noise div {
+      position: absolute;
+      inset: -500px;
+      background: url("/src/assets/images/common/noise.png") 0px 0px/320px 320px transparent;
+      opacity: 0.2;
+      -webkit-animation: noise 1s steps(8, end) infinite both;
+              animation: noise 1s steps(8, end) infinite both; }
+@-webkit-keyframes noise {
+  0% {
+    -webkit-transform: translateX(0px, 0px);
+    transform: translateX(0px, 0px); }
+  10% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); }
+  20% {
+    -webkit-transform: translate(150px, -100px);
+    transform: translate(150px, -100px); }
+  30% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); }
+  40% {
+    -webkit-transform: translate(100px, -150px);
+    transform: translate(100px, -150px); }
+  50% {
+    -webkit-transform: translate(-100px, 200px);
+    transform: translate(-100px, 200px); }
+  60% {
+    -webkit-transform: translate(-200px, -100px);
+    transform: translate(-200px, -100px); }
+  70% {
+    -webkit-transform: translateY(50px, 100px);
+    transform: translateY(50px, 100px); }
+  80% {
+    -webkit-transform: translate(100px, -150px);
+    transform: translate(100px, -150px); }
+  90% {
+    -webkit-transform: translate(0px, 200px);
+    transform: translate(0px, 200px); }
+  100% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); } }
+@keyframes noise {
+  0% {
+    -webkit-transform: translateX(0px, 0px);
+    transform: translateX(0px, 0px); }
+  10% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); }
+  20% {
+    -webkit-transform: translate(150px, -100px);
+    transform: translate(150px, -100px); }
+  30% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); }
+  40% {
+    -webkit-transform: translate(100px, -150px);
+    transform: translate(100px, -150px); }
+  50% {
+    -webkit-transform: translate(-100px, 200px);
+    transform: translate(-100px, 200px); }
+  60% {
+    -webkit-transform: translate(-200px, -100px);
+    transform: translate(-200px, -100px); }
+  70% {
+    -webkit-transform: translateY(50px, 100px);
+    transform: translateY(50px, 100px); }
+  80% {
+    -webkit-transform: translate(100px, -150px);
+    transform: translate(100px, -150px); }
+  90% {
+    -webkit-transform: translate(0px, 200px);
+    transform: translate(0px, 200px); }
+  100% {
+    -webkit-transform: translate(-100px, 100px);
+    transform: translate(-100px, 100px); } }
+  /* line 385, ../scss/general/general.scss */
+  .section--jungles .jungles__title-wrap {
+    position: fixed;
+    z-index: 14;
+    width: 100%; }
+    /* line 390, ../scss/general/general.scss */
+    .section--jungles .jungles__title-wrap div {
+      display: block;
+      width: 200%;
+      height: 250px;
+      position: absolute;
+      overflow: hidden;
+      -webkit-animation: moving 30s linear infinite;
+      animation: moving 30s linear infinite; }
+      @media (max-width: 768px) {
+        /* line 390, ../scss/general/general.scss */
+        .section--jungles .jungles__title-wrap div {
+          height: 120px; } }
+      /* line 403, ../scss/general/general.scss */
+      .section--jungles .jungles__title-wrap div span {
+        padding: 0 45px;
+        width: 50%;
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 225px;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+        @media (max-width: 768px) {
+          /* line 403, ../scss/general/general.scss */
+          .section--jungles .jungles__title-wrap div span {
+            font-size: 110px;
+            line-height: 110px;
+            padding: 0 5px; } }
+@-webkit-keyframes moving {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+@keyframes moving {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+  /* line 432, ../scss/general/general.scss */
+  .section--jungles .jungles {
+    padding-right: 48px;
+    padding-left: 48px;
+    padding-top: 300px;
+    position: relative;
+    z-index: 15; }
+    @media (max-width: 768px) {
+      /* line 432, ../scss/general/general.scss */
+      .section--jungles .jungles {
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 165px; } }
+    /* line 445, ../scss/general/general.scss */
+    .section--jungles .jungles__desc {
+      max-width: 450px; }
+      @media (max-width: 768px) {
+        /* line 445, ../scss/general/general.scss */
+        .section--jungles .jungles__desc {
+          margin: 0 auto;
+          text-align: center; } }
+      /* line 453, ../scss/general/general.scss */
+      .section--jungles .jungles__desc p {
+        margin-bottom: 10px; }
+      /* line 457, ../scss/general/general.scss */
+      .section--jungles .jungles__desc a {
+        color: #FF0000;
+        text-decoration: underline;
+        display: block;
+        margin-top: 30px; }
+        /* line 463, ../scss/general/general.scss */
+        .section--jungles .jungles__desc a:hover {
+          text-decoration: none; }
+    /* line 469, ../scss/general/general.scss */
+    .section--jungles .jungles__list {
+      margin-top: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%; }
+      @media (max-width: 768px) {
+        /* line 469, ../scss/general/general.scss */
+        .section--jungles .jungles__list {
+          margin-top: 60px; } }
+      /* line 479, ../scss/general/general.scss */
+      .section--jungles .jungles__list .jungles__item {
+        width: 23%;
+        margin-bottom: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        @media (max-width: 1024px) {
+          /* line 479, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item {
+            width: 43%; } }
+        @media (max-width: 768px) {
+          /* line 479, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item {
+            width: 100%;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 50px; } }
+        /* line 495, ../scss/general/general.scss */
+        .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
+          margin-top: 50px; }
+          @media (max-width: 768px) {
+            /* line 495, ../scss/general/general.scss */
+            .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
+              margin-top: 50px; } }
+        /* line 503, ../scss/general/general.scss */
+        .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
+          margin-top: 100px; }
+          @media (max-width: 768px) {
+            /* line 503, ../scss/general/general.scss */
+            .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
+              margin-top: 50px; } }
+        /* line 511, ../scss/general/general.scss */
+        .section--jungles .jungles__list .jungles__item:nth-child(4n) {
+          margin-top: 150px; }
+          @media (max-width: 768px) {
+            /* line 511, ../scss/general/general.scss */
+            .section--jungles .jungles__list .jungles__item:nth-child(4n) {
+              margin-top: 50px; } }
+        /* line 519, ../scss/general/general.scss */
+        .section--jungles .jungles__list .jungles__item img {
+          max-width: 400px;
+          width: 100%;
+          -webkit-transition: -webkit-transform 2.5s ease-out 0s;
+          transition: -webkit-transform 2.5s ease-out 0s;
+          transition: transform 2.5s ease-out 0s;
+          transition: transform 2.5s ease-out 0s, -webkit-transform 2.5s ease-out 0s; }
+        /* line 525, ../scss/general/general.scss */
+        .section--jungles .jungles__list .jungles__item-info {
+          max-width: 400px;
+          width: 100%; }
+          /* line 529, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item-info .jungles__item-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-top: 10px; }
+          /* line 536, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item-info .jungles__item-date {
+            font-size: 14px;
+            color: #d1d1d1; }
+          /* line 541, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item-info .jungles__item-desc {
+            max-width: 400px; }
+          /* line 545, ../scss/general/general.scss */
+          .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
+            max-width: -webkit-fit-content;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            display: block;
+            margin-top: 25px;
+            color: #FF0000;
+            text-decoration: underline; }
+            /* line 552, ../scss/general/general.scss */
+            .section--jungles .jungles__list .jungles__item-info .jungles__item-link:hover {
+              text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
