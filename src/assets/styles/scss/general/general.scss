@@ -305,6 +305,7 @@
 .section--jungles {
   background-color: $secondary;
   color: $white;
+  overflow: hidden;
 
   .noise {
     height: 100%;
@@ -402,7 +403,7 @@
       animation: moving 30s linear infinite;
 
       @include media-mobile {
-        height: 115px;
+        height: 118px;
       }
 
       span {
