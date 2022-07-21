@@ -388,11 +388,6 @@
     z-index: 14;
     width: 100%;
 
-    @include media-mobile {
-      position: absolute;
-      top: 0;
-    }
-
     div {
       display: block;
       width: 200%;
