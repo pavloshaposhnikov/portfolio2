@@ -305,8 +305,6 @@
 .section--jungles {
   background-color: $secondary;
   color: $white;
-  overflow: hidden;
-  height: -webkit-fill-available;
 
   .noise {
     height: 100%;
@@ -321,7 +319,7 @@
     div {
       position: absolute;
       inset: -500px;
-      background: url("/src/assets/images/common/noise.png") 0px 0px / 320px 320px transparent;
+      background: url("../../images/common/noise.png") 0px 0px / 320px 320px transparent;
       opacity: 0.2;
       animation: noise 1s steps(8, end) infinite both;
       
