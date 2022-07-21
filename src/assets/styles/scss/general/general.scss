@@ -387,6 +387,11 @@
     z-index: 14;
     width: 100%;
 
+    @include media-mobile {
+      position: absolute;
+      top: 0;
+    }
+
     div {
       display: block;
       width: 200%;
@@ -397,7 +402,7 @@
       animation: moving 30s linear infinite;
 
       @include media-mobile {
-        height: 120px;
+        height: 115px;
       }
 
       span {
@@ -548,6 +553,10 @@
             margin-top: 25px;
             color: $red;
             text-decoration: underline;
+
+            @include media-mobile {
+              margin-top: 15px;
+            }
 
             &:hover {
               text-decoration: none;

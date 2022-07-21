@@ -728,7 +728,12 @@ details, summary {
     position: fixed;
     z-index: 14;
     width: 100%; }
-    /* line 390, ../scss/general/general.scss */
+    @media (max-width: 768px) {
+      /* line 385, ../scss/general/general.scss */
+      .section--jungles .jungles__title-wrap {
+        position: absolute;
+        top: 0; } }
+    /* line 395, ../scss/general/general.scss */
     .section--jungles .jungles__title-wrap div {
       display: block;
       width: 200%;
@@ -738,10 +743,10 @@ details, summary {
       -webkit-animation: moving 30s linear infinite;
       animation: moving 30s linear infinite; }
       @media (max-width: 768px) {
-        /* line 390, ../scss/general/general.scss */
+        /* line 395, ../scss/general/general.scss */
         .section--jungles .jungles__title-wrap div {
-          height: 120px; } }
-      /* line 403, ../scss/general/general.scss */
+          height: 115px; } }
+      /* line 408, ../scss/general/general.scss */
       .section--jungles .jungles__title-wrap div span {
         padding: 0 45px;
         width: 50%;
@@ -752,7 +757,7 @@ details, summary {
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
         @media (max-width: 768px) {
-          /* line 403, ../scss/general/general.scss */
+          /* line 408, ../scss/general/general.scss */
           .section--jungles .jungles__title-wrap div span {
             font-size: 110px;
             line-height: 110px;
@@ -767,7 +772,7 @@ details, summary {
     left: 0; }
   100% {
     left: -100%; } }
-  /* line 432, ../scss/general/general.scss */
+  /* line 437, ../scss/general/general.scss */
   .section--jungles .jungles {
     padding-right: 48px;
     padding-left: 48px;
@@ -775,32 +780,32 @@ details, summary {
     position: relative;
     z-index: 15; }
     @media (max-width: 768px) {
-      /* line 432, ../scss/general/general.scss */
+      /* line 437, ../scss/general/general.scss */
       .section--jungles .jungles {
         padding-left: 23px;
         padding-right: 23px;
         padding-top: 165px; } }
-    /* line 445, ../scss/general/general.scss */
+    /* line 450, ../scss/general/general.scss */
     .section--jungles .jungles__desc {
       max-width: 450px; }
       @media (max-width: 768px) {
-        /* line 445, ../scss/general/general.scss */
+        /* line 450, ../scss/general/general.scss */
         .section--jungles .jungles__desc {
           margin: 0 auto;
           text-align: center; } }
-      /* line 453, ../scss/general/general.scss */
+      /* line 458, ../scss/general/general.scss */
       .section--jungles .jungles__desc p {
         margin-bottom: 10px; }
-      /* line 457, ../scss/general/general.scss */
+      /* line 462, ../scss/general/general.scss */
       .section--jungles .jungles__desc a {
         color: #FF0000;
         text-decoration: underline;
         display: block;
         margin-top: 30px; }
-        /* line 463, ../scss/general/general.scss */
+        /* line 468, ../scss/general/general.scss */
         .section--jungles .jungles__desc a:hover {
           text-decoration: none; }
-    /* line 469, ../scss/general/general.scss */
+    /* line 474, ../scss/general/general.scss */
     .section--jungles .jungles__list {
       margin-top: 100px;
       display: -webkit-box;
@@ -813,10 +818,10 @@ details, summary {
           flex-wrap: wrap;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 469, ../scss/general/general.scss */
+        /* line 474, ../scss/general/general.scss */
         .section--jungles .jungles__list {
           margin-top: 60px; } }
-      /* line 479, ../scss/general/general.scss */
+      /* line 484, ../scss/general/general.scss */
       .section--jungles .jungles__list .jungles__item {
         width: 23%;
         margin-bottom: 150px;
@@ -828,39 +833,39 @@ details, summary {
             -ms-flex-direction: column;
                 flex-direction: column; }
         @media (max-width: 1024px) {
-          /* line 479, ../scss/general/general.scss */
+          /* line 484, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 43%; } }
         @media (max-width: 768px) {
-          /* line 479, ../scss/general/general.scss */
+          /* line 484, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 100%;
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
             margin-bottom: 50px; } }
-        /* line 495, ../scss/general/general.scss */
+        /* line 500, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
           margin-top: 50px; }
           @media (max-width: 768px) {
-            /* line 495, ../scss/general/general.scss */
+            /* line 500, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
               margin-top: 50px; } }
-        /* line 503, ../scss/general/general.scss */
+        /* line 508, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
           margin-top: 100px; }
           @media (max-width: 768px) {
-            /* line 503, ../scss/general/general.scss */
+            /* line 508, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
               margin-top: 50px; } }
-        /* line 511, ../scss/general/general.scss */
+        /* line 516, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n) {
           margin-top: 150px; }
           @media (max-width: 768px) {
-            /* line 511, ../scss/general/general.scss */
+            /* line 516, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n) {
               margin-top: 50px; } }
-        /* line 519, ../scss/general/general.scss */
+        /* line 524, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item img {
           max-width: 400px;
           width: 100%;
@@ -868,24 +873,24 @@ details, summary {
           transition: -webkit-transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s, -webkit-transform 2.5s ease-out 0s; }
-        /* line 525, ../scss/general/general.scss */
+        /* line 530, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item-info {
           max-width: 400px;
           width: 100%; }
-          /* line 529, ../scss/general/general.scss */
+          /* line 534, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-title {
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 10px;
             margin-top: 10px; }
-          /* line 536, ../scss/general/general.scss */
+          /* line 541, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-date {
             font-size: 14px;
             color: #d1d1d1; }
-          /* line 541, ../scss/general/general.scss */
+          /* line 546, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-desc {
             max-width: 400px; }
-          /* line 545, ../scss/general/general.scss */
+          /* line 550, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
             max-width: -webkit-fit-content;
             max-width: -moz-fit-content;
@@ -894,7 +899,11 @@ details, summary {
             margin-top: 25px;
             color: #FF0000;
             text-decoration: underline; }
-            /* line 552, ../scss/general/general.scss */
+            @media (max-width: 768px) {
+              /* line 550, ../scss/general/general.scss */
+              .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
+                margin-top: 15px; } }
+            /* line 561, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item-info .jungles__item-link:hover {
               text-decoration: none; }
 
