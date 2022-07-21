@@ -84,10 +84,9 @@ details, summary {
 
 /* line 82, ../scss/layout/layout.scss */
 .no-scroll {
-  overflow: hidden;
   position: fixed; }
 
-/* line 87, ../scss/layout/layout.scss */
+/* line 86, ../scss/layout/layout.scss */
 .cursor, .aura {
   position: fixed;
   border-radius: 100%;
@@ -100,12 +99,12 @@ details, summary {
   pointer-events: none;
   z-index: 99; }
   @media (max-width: 1024px) {
-    /* line 87, ../scss/layout/layout.scss */
+    /* line 86, ../scss/layout/layout.scss */
     .cursor, .aura {
       opacity: 1;
       visibility: hidden; } }
 
-/* line 105, ../scss/layout/layout.scss */
+/* line 104, ../scss/layout/layout.scss */
 .cursor {
   width: 8px;
   height: 8px;
@@ -113,15 +112,15 @@ details, summary {
   -webkit-transition: .2s linear background-color;
   transition: .2s linear background-color; }
 
-/* line 113, ../scss/layout/layout.scss */
+/* line 112, ../scss/layout/layout.scss */
 .cursor.is-active {
   background-color: #FF0000; }
 
-/* line 117, ../scss/layout/layout.scss */
+/* line 116, ../scss/layout/layout.scss */
 .cursor.cursor-red {
   background-color: #FF0000; }
 
-/* line 121, ../scss/layout/layout.scss */
+/* line 120, ../scss/layout/layout.scss */
 .aura {
   width: 32px;
   height: 32px;
@@ -133,34 +132,34 @@ details, summary {
   -webkit-transition: all .3s linear;
   transition: all .3s linear; }
 
-/* line 132, ../scss/layout/layout.scss */
+/* line 131, ../scss/layout/layout.scss */
 .title {
   font-size: 175px;
   line-height: 175px;
   font-weight: 300; }
   @media (max-width: 1024px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 97px;
       line-height: 97px; } }
   @media (max-width: 768px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 71px;
       line-height: 78px; } }
   @media (max-width: 390px) {
-    /* line 132, ../scss/layout/layout.scss */
+    /* line 131, ../scss/layout/layout.scss */
     .title {
       font-size: 62px;
       line-height: 74px; } }
 
-/* line 153, ../scss/layout/layout.scss */
+/* line 152, ../scss/layout/layout.scss */
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px; }
-  /* line 157, ../scss/layout/layout.scss */
+  /* line 156, ../scss/layout/layout.scss */
   .socials__link {
     color: whitesmoke;
     font-size: 16px;
@@ -170,14 +169,14 @@ details, summary {
     max-width: -moz-fit-content;
     max-width: fit-content; }
     @media (max-width: 768px) {
-      /* line 157, ../scss/layout/layout.scss */
+      /* line 156, ../scss/layout/layout.scss */
       .socials__link {
         font-size: 11px; } }
     @media (max-width: 390px) {
-      /* line 157, ../scss/layout/layout.scss */
+      /* line 156, ../scss/layout/layout.scss */
       .socials__link {
         font-size: 10px; } }
-    /* line 172, ../scss/layout/layout.scss */
+    /* line 171, ../scss/layout/layout.scss */
     .socials__link:after {
       content: '';
       position: absolute;
@@ -187,10 +186,10 @@ details, summary {
       background-color: whitesmoke;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 172, ../scss/layout/layout.scss */
+        /* line 171, ../scss/layout/layout.scss */
         .socials__link:after {
           height: 1px; } }
-  /* line 187, ../scss/layout/layout.scss */
+  /* line 186, ../scss/layout/layout.scss */
   .socials .socials__item:hover .socials__link:after {
     opacity: 0; }
 
