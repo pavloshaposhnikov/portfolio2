@@ -306,6 +306,7 @@
   background-color: $secondary;
   color: $white;
   overflow: hidden;
+  height: -webkit-fill-available;
 
   .noise {
     height: 100%;
