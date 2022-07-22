@@ -98,7 +98,6 @@
   z-index: 10;
   transition: all .375s;
   width: 100vw;
-  height: 100vh;
 
   &__list {
     margin-top: auto;
@@ -146,7 +145,7 @@
 .nav-wrapper {
   @include flex-justify(center);
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 108px);
   width: 100%;
 }
 

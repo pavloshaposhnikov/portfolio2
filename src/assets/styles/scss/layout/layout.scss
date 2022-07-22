@@ -6,15 +6,9 @@
   box-sizing: border-box;
 }
 
-:root {
-  --doc-height: 100%;
-}
-
 html, body {
   width: 100%;
   margin: 0;
-  height: 100vh;
-  height: var(--doc-height);
 }
 
 body {
