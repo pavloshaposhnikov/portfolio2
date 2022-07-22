@@ -98,7 +98,6 @@
   z-index: 10;
   transition: all .375s;
   width: 100vw;
-  height: 100vh;
 
   &__list {
     margin-top: auto;
@@ -147,13 +146,16 @@
   @include flex-justify(center);
   flex-direction: column;
   height: 100vh;
+  width: 100%;
 }
 
 .socials-nav {
   margin-top: auto;
+  margin-left: auto;
   padding-bottom: 48px;
 
   @include media-mobile {
     padding-bottom: 23px;
+    margin-left: unset;
   }
 }
