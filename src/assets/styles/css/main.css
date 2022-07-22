@@ -351,7 +351,7 @@ details, summary {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100vh - 108px);
+  height: calc(100vh - 48px);
   width: 100%; }
 
 /* line 152, ../scss/layout/header/header.scss */
