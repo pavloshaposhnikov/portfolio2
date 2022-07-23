@@ -26,32 +26,6 @@ if (adaptiveBreakpoint) {
     };
 };
 
-function myFunction(e) {
-    backgroundImg.css({
-        'left': e.clientX,
-        'top': e.clientY,
-        'opacity': 1,
-    }),
-        cursor.css({
-            'opacity': 0,
-        }),
-        cursorAura.css({
-            'opacity': 0,
-        })
-};
-
-function myLeaveFunction(e) {
-    backgroundImg.css({
-        'opacity': 0,
-    }),
-        cursor.css({
-            'opacity': 1,
-        }),
-        cursorAura.css({
-            'opacity': 1,
-        })
-};
-
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 450) {

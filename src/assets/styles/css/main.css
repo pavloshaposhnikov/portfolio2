@@ -408,12 +408,28 @@ details, summary {
   padding-top: 50px; }
   /* line 43, ../scss/general/general.scss */
   .section--projects .projects__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 100px;
-    padding-left: 35px;
     position: relative;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s; }
-    /* line 49, ../scss/general/general.scss */
+    @media (max-width: 1024px) {
+      /* line 43, ../scss/general/general.scss */
+      .section--projects .projects__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 768px) {
+      /* line 43, ../scss/general/general.scss */
+      .section--projects .projects__item {
+        padding-left: 0; } }
+    /* line 57, ../scss/general/general.scss */
     .section--projects .projects__item:after {
       content: '01.';
       position: absolute;
@@ -421,156 +437,193 @@ details, summary {
       top: 25px;
       font-size: 15px;
       opacity: 0.5; }
-    /* line 60, ../scss/general/general.scss */
+      @media (max-width: 768px) {
+        /* line 57, ../scss/general/general.scss */
+        .section--projects .projects__item:after {
+          font-size: 12px;
+          top: 10px; } }
+    /* line 71, ../scss/general/general.scss */
+    .section--projects .projects__item:hover .projects__preview {
+      display: block; }
+    /* line 77, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(2):after {
       content: '02.'; }
-    /* line 67, ../scss/general/general.scss */
+    /* line 84, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(3):after {
       content: '03.'; }
-    /* line 74, ../scss/general/general.scss */
+    /* line 91, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(4):after {
       content: '04.'; }
-    /* line 81, ../scss/general/general.scss */
+    /* line 98, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(5):after {
       content: '05.'; }
-    /* line 86, ../scss/general/general.scss */
+    /* line 103, ../scss/general/general.scss */
     .section--projects .projects__item .projects__link:hover {
       color: #191919; }
-  /* line 91, ../scss/general/general.scss */
+  /* line 108, ../scss/general/general.scss */
   .section--projects .projects__title {
     font-size: 50px;
     font-weight: 300;
     line-height: 50px; }
-  /* line 97, ../scss/general/general.scss */
+    @media (max-width: 768px) {
+      /* line 108, ../scss/general/general.scss */
+      .section--projects .projects__title {
+        font-size: 29px;
+        line-height: 29px;
+        padding-left: 24px; } }
+  /* line 120, ../scss/general/general.scss */
   .section--projects .projects__subtitle {
     margin-top: 5px;
     color: #393939;
     opacity: 0.5;
     font-size: 17px;
     font-weight: 300; }
-  /* line 105, ../scss/general/general.scss */
+    @media (max-width: 768px) {
+      /* line 120, ../scss/general/general.scss */
+      .section--projects .projects__subtitle {
+        font-size: 12px;
+        margin-top: 0; } }
+  /* line 133, ../scss/general/general.scss */
   .section--projects .projects .projects__preview {
     position: fixed;
     z-index: -1;
-    width: 375px;
-    height: 250px;
-    opacity: 1;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    pointer-events: none;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s; }
-    /* line 115, ../scss/general/general.scss */
+    right: -48px;
+    top: 50%;
+    display: none;
+    max-width: 960px;
+    height: 580px;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%); }
+    @media (max-width: 1024px) {
+      /* line 133, ../scss/general/general.scss */
+      .section--projects .projects .projects__preview {
+        position: unset;
+        display: block;
+        z-index: 1;
+        -webkit-transform: none;
+                transform: none;
+        max-width: 700px;
+        height: 400px;
+        margin-top: 40px; } }
+    @media (max-width: 768px) {
+      /* line 133, ../scss/general/general.scss */
+      .section--projects .projects .projects__preview {
+        max-width: 400px;
+        height: 200px;
+        margin-top: 15px; } }
+    /* line 159, ../scss/general/general.scss */
     .section--projects .projects .projects__preview img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      -webkit-transition: opacity 0.5s linear 0.2s;
+      transition: opacity 0.5s linear 0.2s; }
 
-/* line 123, ../scss/general/general.scss */
+/* line 168, ../scss/general/general.scss */
 .section--about {
   padding-top: 108px;
   position: relative;
   z-index: 1; }
-  /* line 128, ../scss/general/general.scss */
+  /* line 173, ../scss/general/general.scss */
   .section--about .about {
     position: relative; }
-    /* line 131, ../scss/general/general.scss */
+    /* line 176, ../scss/general/general.scss */
     .section--about .about__info {
       margin: 0 auto;
       padding-top: 75px;
       max-width: 700px;
       width: 100%; }
       @media (max-width: 1024px) {
-        /* line 131, ../scss/general/general.scss */
+        /* line 176, ../scss/general/general.scss */
         .section--about .about__info {
           max-width: 525px; } }
       @media (max-width: 768px) {
-        /* line 131, ../scss/general/general.scss */
+        /* line 176, ../scss/general/general.scss */
         .section--about .about__info {
           max-width: 285px; } }
-      /* line 145, ../scss/general/general.scss */
+      /* line 190, ../scss/general/general.scss */
       .section--about .about__info-text {
         font-size: 30px;
         line-height: 48px;
         font-weight: 300;
         margin-bottom: 15px; }
         @media (max-width: 1024px) {
-          /* line 145, ../scss/general/general.scss */
+          /* line 190, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 24px;
             line-height: 34px; } }
         @media (max-width: 768px) {
-          /* line 145, ../scss/general/general.scss */
+          /* line 190, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 19px;
             line-height: 29px; } }
         @media (max-width: 390px) {
-          /* line 145, ../scss/general/general.scss */
+          /* line 190, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 17px;
             line-height: 25px; } }
-      /* line 167, ../scss/general/general.scss */
+      /* line 212, ../scss/general/general.scss */
       .section--about .about__info-author {
         margin-top: 50px;
         font-size: 30px;
         font-weight: 300; }
         @media (max-width: 1024px) {
-          /* line 167, ../scss/general/general.scss */
+          /* line 212, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 24px; } }
         @media (max-width: 768px) {
-          /* line 167, ../scss/general/general.scss */
+          /* line 212, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 20px; } }
         @media (max-width: 390px) {
-          /* line 167, ../scss/general/general.scss */
+          /* line 212, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 17px; } }
-        /* line 184, ../scss/general/general.scss */
+        /* line 229, ../scss/general/general.scss */
         .section--about .about__info-author a {
           text-decoration: underline; }
-    /* line 190, ../scss/general/general.scss */
+    /* line 235, ../scss/general/general.scss */
     .section--about .about__contact {
       padding-top: 900px;
       max-width: 815px;
       width: 100%;
       margin-left: auto; }
       @media (max-width: 1024px) {
-        /* line 190, ../scss/general/general.scss */
+        /* line 235, ../scss/general/general.scss */
         .section--about .about__contact {
           padding-top: 350px;
           max-width: 475px; } }
       @media (max-width: 768px) {
-        /* line 190, ../scss/general/general.scss */
+        /* line 235, ../scss/general/general.scss */
         .section--about .about__contact {
           margin-left: unset;
           margin-bottom: 30px; } }
       @media (max-width: 390px) {
-        /* line 190, ../scss/general/general.scss */
+        /* line 235, ../scss/general/general.scss */
         .section--about .about__contact {
           padding-top: 300px; } }
-      /* line 210, ../scss/general/general.scss */
+      /* line 255, ../scss/general/general.scss */
       .section--about .about__contact p {
         font-size: 45px;
         line-height: 60px;
         font-weight: 300; }
         @media (max-width: 1024px) {
-          /* line 210, ../scss/general/general.scss */
+          /* line 255, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 27px;
             line-height: 34px;
             font-weight: 400; } }
         @media (max-width: 768px) {
-          /* line 210, ../scss/general/general.scss */
+          /* line 255, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 20px;
             line-height: 22px;
             font-weight: 300; } }
         @media (max-width: 390px) {
-          /* line 210, ../scss/general/general.scss */
+          /* line 255, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 17px;
             line-height: 19px; } }
-      /* line 233, ../scss/general/general.scss */
+      /* line 278, ../scss/general/general.scss */
       .section--about .about__contact a {
         -webkit-animation: blink 3s linear infinite;
         animation: blink 3s linear infinite; }
@@ -596,34 +649,34 @@ details, summary {
     color: #949494; }
   100% {
     color: #191919; } }
-  /* line 256, ../scss/general/general.scss */
+  /* line 301, ../scss/general/general.scss */
   .section--about .socials-about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 50px; }
-    /* line 260, ../scss/general/general.scss */
+    /* line 305, ../scss/general/general.scss */
     .section--about .socials-about .socials__link {
       color: #191919;
       font-size: 25px; }
       @media (max-width: 1024px) {
-        /* line 260, ../scss/general/general.scss */
+        /* line 305, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 23px; } }
       @media (max-width: 768px) {
-        /* line 260, ../scss/general/general.scss */
+        /* line 305, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 20px; } }
       @media (max-width: 390px) {
-        /* line 260, ../scss/general/general.scss */
+        /* line 305, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 17px; } }
-      /* line 276, ../scss/general/general.scss */
+      /* line 321, ../scss/general/general.scss */
       .section--about .socials-about .socials__link:after {
         background-color: #191919; }
 
-/* line 283, ../scss/general/general.scss */
+/* line 328, ../scss/general/general.scss */
 .about__background-img {
   max-width: 383px;
   width: 100%;
@@ -636,21 +689,21 @@ details, summary {
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
   @media (max-width: 1024px) {
-    /* line 283, ../scss/general/general.scss */
+    /* line 328, ../scss/general/general.scss */
     .about__background-img {
       visibility: hidden; } }
-  /* line 297, ../scss/general/general.scss */
+  /* line 342, ../scss/general/general.scss */
   .about__background-img img {
     position: relative;
     overflow: hidden;
     -webkit-transform: scale(1.01);
             transform: scale(1.01); }
 
-/* line 305, ../scss/general/general.scss */
+/* line 350, ../scss/general/general.scss */
 .section--jungles {
   background-color: #393939;
   color: #fff; }
-  /* line 309, ../scss/general/general.scss */
+  /* line 354, ../scss/general/general.scss */
   .section--jungles .noise {
     height: 100%;
     left: 0;
@@ -660,7 +713,7 @@ details, summary {
     top: 0;
     width: 100%;
     z-index: 0; }
-    /* line 319, ../scss/general/general.scss */
+    /* line 364, ../scss/general/general.scss */
     .section--jungles .noise div {
       position: absolute;
       inset: -500px;
@@ -736,12 +789,12 @@ details, summary {
   100% {
     -webkit-transform: translate(-100px, 100px);
     transform: translate(-100px, 100px); } }
-  /* line 385, ../scss/general/general.scss */
+  /* line 430, ../scss/general/general.scss */
   .section--jungles .jungles__title-wrap {
     position: fixed;
     z-index: 14;
     width: 100%; }
-    /* line 390, ../scss/general/general.scss */
+    /* line 435, ../scss/general/general.scss */
     .section--jungles .jungles__title-wrap div {
       display: block;
       width: 200%;
@@ -751,10 +804,10 @@ details, summary {
       -webkit-animation: moving 30s linear infinite;
       animation: moving 30s linear infinite; }
       @media (max-width: 768px) {
-        /* line 390, ../scss/general/general.scss */
+        /* line 435, ../scss/general/general.scss */
         .section--jungles .jungles__title-wrap div {
           height: 118px; } }
-      /* line 403, ../scss/general/general.scss */
+      /* line 448, ../scss/general/general.scss */
       .section--jungles .jungles__title-wrap div span {
         padding: 0 45px;
         width: 50%;
@@ -765,7 +818,7 @@ details, summary {
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
         @media (max-width: 768px) {
-          /* line 403, ../scss/general/general.scss */
+          /* line 448, ../scss/general/general.scss */
           .section--jungles .jungles__title-wrap div span {
             font-size: 110px;
             line-height: 110px;
@@ -780,7 +833,7 @@ details, summary {
     left: 0; }
   100% {
     left: -100%; } }
-  /* line 432, ../scss/general/general.scss */
+  /* line 477, ../scss/general/general.scss */
   .section--jungles .jungles {
     padding-right: 48px;
     padding-left: 48px;
@@ -788,32 +841,32 @@ details, summary {
     position: relative;
     z-index: 15; }
     @media (max-width: 768px) {
-      /* line 432, ../scss/general/general.scss */
+      /* line 477, ../scss/general/general.scss */
       .section--jungles .jungles {
         padding-left: 23px;
         padding-right: 23px;
         padding-top: 165px; } }
-    /* line 445, ../scss/general/general.scss */
+    /* line 490, ../scss/general/general.scss */
     .section--jungles .jungles__desc {
       max-width: 450px; }
       @media (max-width: 768px) {
-        /* line 445, ../scss/general/general.scss */
+        /* line 490, ../scss/general/general.scss */
         .section--jungles .jungles__desc {
           margin: 0 auto;
           text-align: center; } }
-      /* line 453, ../scss/general/general.scss */
+      /* line 498, ../scss/general/general.scss */
       .section--jungles .jungles__desc p {
         margin-bottom: 10px; }
-      /* line 457, ../scss/general/general.scss */
+      /* line 502, ../scss/general/general.scss */
       .section--jungles .jungles__desc a {
         color: #FF0000;
         text-decoration: underline;
         display: block;
         margin-top: 30px; }
-        /* line 463, ../scss/general/general.scss */
+        /* line 508, ../scss/general/general.scss */
         .section--jungles .jungles__desc a:hover {
           text-decoration: none; }
-    /* line 469, ../scss/general/general.scss */
+    /* line 514, ../scss/general/general.scss */
     .section--jungles .jungles__list {
       margin-top: 100px;
       display: -webkit-box;
@@ -826,10 +879,10 @@ details, summary {
           flex-wrap: wrap;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 469, ../scss/general/general.scss */
+        /* line 514, ../scss/general/general.scss */
         .section--jungles .jungles__list {
           margin-top: 60px; } }
-      /* line 479, ../scss/general/general.scss */
+      /* line 524, ../scss/general/general.scss */
       .section--jungles .jungles__list .jungles__item {
         width: 23%;
         margin-bottom: 150px;
@@ -841,39 +894,39 @@ details, summary {
             -ms-flex-direction: column;
                 flex-direction: column; }
         @media (max-width: 1024px) {
-          /* line 479, ../scss/general/general.scss */
+          /* line 524, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 43%; } }
         @media (max-width: 768px) {
-          /* line 479, ../scss/general/general.scss */
+          /* line 524, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 100%;
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
             margin-bottom: 50px; } }
-        /* line 495, ../scss/general/general.scss */
+        /* line 540, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
           margin-top: 50px; }
           @media (max-width: 768px) {
-            /* line 495, ../scss/general/general.scss */
+            /* line 540, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
               margin-top: 50px; } }
-        /* line 503, ../scss/general/general.scss */
+        /* line 548, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
           margin-top: 100px; }
           @media (max-width: 768px) {
-            /* line 503, ../scss/general/general.scss */
+            /* line 548, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
               margin-top: 50px; } }
-        /* line 511, ../scss/general/general.scss */
+        /* line 556, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n) {
           margin-top: 150px; }
           @media (max-width: 768px) {
-            /* line 511, ../scss/general/general.scss */
+            /* line 556, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n) {
               margin-top: 50px; } }
-        /* line 519, ../scss/general/general.scss */
+        /* line 564, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item img {
           max-width: 400px;
           width: 100%;
@@ -881,24 +934,24 @@ details, summary {
           transition: -webkit-transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s, -webkit-transform 2.5s ease-out 0s; }
-        /* line 525, ../scss/general/general.scss */
+        /* line 570, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item-info {
           max-width: 400px;
           width: 100%; }
-          /* line 529, ../scss/general/general.scss */
+          /* line 574, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-title {
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 10px;
             margin-top: 10px; }
-          /* line 536, ../scss/general/general.scss */
+          /* line 581, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-date {
             font-size: 14px;
             color: #d1d1d1; }
-          /* line 541, ../scss/general/general.scss */
+          /* line 586, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-desc {
             max-width: 400px; }
-          /* line 545, ../scss/general/general.scss */
+          /* line 590, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
             max-width: -webkit-fit-content;
             max-width: -moz-fit-content;
@@ -908,10 +961,10 @@ details, summary {
             color: #FF0000;
             text-decoration: underline; }
             @media (max-width: 768px) {
-              /* line 545, ../scss/general/general.scss */
+              /* line 590, ../scss/general/general.scss */
               .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
                 margin-top: 15px; } }
-            /* line 556, ../scss/general/general.scss */
+            /* line 601, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item-info .jungles__item-link:hover {
               text-decoration: none; }
 
