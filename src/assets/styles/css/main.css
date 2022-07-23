@@ -383,30 +383,38 @@ details, summary {
   @media (max-width: 768px) {
     /* line 3, ../scss/general/general.scss */
     .section--general .general {
-      padding-top: 170px; } }
-  /* line 17, ../scss/general/general.scss */
+      padding-top: 170px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100vh; } }
+  /* line 19, ../scss/general/general.scss */
   .section--general .general .general__subtitle {
     font-size: 50px;
     font-weight: 300; }
     @media (max-width: 1024px) {
-      /* line 17, ../scss/general/general.scss */
+      /* line 19, ../scss/general/general.scss */
       .section--general .general .general__subtitle {
         font-size: 28px;
         margin-top: 15px; } }
     @media (max-width: 768px) {
-      /* line 17, ../scss/general/general.scss */
+      /* line 19, ../scss/general/general.scss */
       .section--general .general .general__subtitle {
         font-size: 26px;
         margin-top: 10px; } }
     @media (max-width: 390px) {
-      /* line 17, ../scss/general/general.scss */
+      /* line 19, ../scss/general/general.scss */
       .section--general .general .general__subtitle {
         font-size: 23px; } }
 
-/* line 40, ../scss/general/general.scss */
+/* line 42, ../scss/general/general.scss */
 .section--projects .projects {
   padding-top: 50px; }
-  /* line 43, ../scss/general/general.scss */
+  @media (max-width: 768px) {
+    /* line 42, ../scss/general/general.scss */
+    .section--projects .projects {
+      padding-top: 0; } }
+  /* line 49, ../scss/general/general.scss */
   .section--projects .projects__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -419,17 +427,17 @@ details, summary {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s; }
     @media (max-width: 1024px) {
-      /* line 43, ../scss/general/general.scss */
+      /* line 49, ../scss/general/general.scss */
       .section--projects .projects__item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media (max-width: 768px) {
-      /* line 43, ../scss/general/general.scss */
+      /* line 49, ../scss/general/general.scss */
       .section--projects .projects__item {
         padding-left: 0; } }
-    /* line 57, ../scss/general/general.scss */
+    /* line 63, ../scss/general/general.scss */
     .section--projects .projects__item:after {
       content: '01.';
       position: absolute;
@@ -438,40 +446,40 @@ details, summary {
       font-size: 15px;
       opacity: 0.5; }
       @media (max-width: 768px) {
-        /* line 57, ../scss/general/general.scss */
+        /* line 63, ../scss/general/general.scss */
         .section--projects .projects__item:after {
           font-size: 12px;
           top: 10px; } }
-    /* line 71, ../scss/general/general.scss */
+    /* line 77, ../scss/general/general.scss */
     .section--projects .projects__item:hover .projects__preview {
       display: block; }
-    /* line 77, ../scss/general/general.scss */
+    /* line 83, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(2):after {
       content: '02.'; }
-    /* line 84, ../scss/general/general.scss */
+    /* line 90, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(3):after {
       content: '03.'; }
-    /* line 91, ../scss/general/general.scss */
+    /* line 97, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(4):after {
       content: '04.'; }
-    /* line 98, ../scss/general/general.scss */
+    /* line 104, ../scss/general/general.scss */
     .section--projects .projects__item:nth-child(5):after {
       content: '05.'; }
-    /* line 103, ../scss/general/general.scss */
+    /* line 109, ../scss/general/general.scss */
     .section--projects .projects__item .projects__link:hover {
       color: #191919; }
-  /* line 108, ../scss/general/general.scss */
+  /* line 114, ../scss/general/general.scss */
   .section--projects .projects__title {
     font-size: 50px;
     font-weight: 300;
     line-height: 50px; }
     @media (max-width: 768px) {
-      /* line 108, ../scss/general/general.scss */
+      /* line 114, ../scss/general/general.scss */
       .section--projects .projects__title {
         font-size: 29px;
         line-height: 29px;
         padding-left: 24px; } }
-  /* line 120, ../scss/general/general.scss */
+  /* line 126, ../scss/general/general.scss */
   .section--projects .projects__subtitle {
     margin-top: 5px;
     color: #393939;
@@ -479,11 +487,11 @@ details, summary {
     font-size: 17px;
     font-weight: 300; }
     @media (max-width: 768px) {
-      /* line 120, ../scss/general/general.scss */
+      /* line 126, ../scss/general/general.scss */
       .section--projects .projects__subtitle {
         font-size: 12px;
         margin-top: 0; } }
-  /* line 133, ../scss/general/general.scss */
+  /* line 139, ../scss/general/general.scss */
   .section--projects .projects .projects__preview {
     position: fixed;
     z-index: -1;
@@ -495,7 +503,7 @@ details, summary {
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%); }
     @media (max-width: 1024px) {
-      /* line 133, ../scss/general/general.scss */
+      /* line 139, ../scss/general/general.scss */
       .section--projects .projects .projects__preview {
         position: unset;
         display: block;
@@ -506,124 +514,124 @@ details, summary {
         height: 400px;
         margin-top: 40px; } }
     @media (max-width: 768px) {
-      /* line 133, ../scss/general/general.scss */
+      /* line 139, ../scss/general/general.scss */
       .section--projects .projects .projects__preview {
         max-width: 400px;
         height: 200px;
         margin-top: 15px; } }
-    /* line 159, ../scss/general/general.scss */
+    /* line 165, ../scss/general/general.scss */
     .section--projects .projects .projects__preview img {
       width: 100%;
       height: 100%;
       -webkit-transition: opacity 0.5s linear 0.2s;
       transition: opacity 0.5s linear 0.2s; }
 
-/* line 168, ../scss/general/general.scss */
+/* line 174, ../scss/general/general.scss */
 .section--about {
   padding-top: 108px;
   position: relative;
   z-index: 1; }
-  /* line 173, ../scss/general/general.scss */
+  /* line 179, ../scss/general/general.scss */
   .section--about .about {
     position: relative; }
-    /* line 176, ../scss/general/general.scss */
+    /* line 182, ../scss/general/general.scss */
     .section--about .about__info {
       margin: 0 auto;
       padding-top: 75px;
       max-width: 700px;
       width: 100%; }
       @media (max-width: 1024px) {
-        /* line 176, ../scss/general/general.scss */
+        /* line 182, ../scss/general/general.scss */
         .section--about .about__info {
           max-width: 525px; } }
       @media (max-width: 768px) {
-        /* line 176, ../scss/general/general.scss */
+        /* line 182, ../scss/general/general.scss */
         .section--about .about__info {
           max-width: 285px; } }
-      /* line 190, ../scss/general/general.scss */
+      /* line 196, ../scss/general/general.scss */
       .section--about .about__info-text {
         font-size: 30px;
         line-height: 48px;
         font-weight: 300;
         margin-bottom: 15px; }
         @media (max-width: 1024px) {
-          /* line 190, ../scss/general/general.scss */
+          /* line 196, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 24px;
             line-height: 34px; } }
         @media (max-width: 768px) {
-          /* line 190, ../scss/general/general.scss */
+          /* line 196, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 19px;
             line-height: 29px; } }
         @media (max-width: 390px) {
-          /* line 190, ../scss/general/general.scss */
+          /* line 196, ../scss/general/general.scss */
           .section--about .about__info-text {
             font-size: 17px;
             line-height: 25px; } }
-      /* line 212, ../scss/general/general.scss */
+      /* line 218, ../scss/general/general.scss */
       .section--about .about__info-author {
         margin-top: 50px;
         font-size: 30px;
         font-weight: 300; }
         @media (max-width: 1024px) {
-          /* line 212, ../scss/general/general.scss */
+          /* line 218, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 24px; } }
         @media (max-width: 768px) {
-          /* line 212, ../scss/general/general.scss */
+          /* line 218, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 20px; } }
         @media (max-width: 390px) {
-          /* line 212, ../scss/general/general.scss */
+          /* line 218, ../scss/general/general.scss */
           .section--about .about__info-author {
             font-size: 17px; } }
-        /* line 229, ../scss/general/general.scss */
+        /* line 235, ../scss/general/general.scss */
         .section--about .about__info-author a {
           text-decoration: underline; }
-    /* line 235, ../scss/general/general.scss */
+    /* line 241, ../scss/general/general.scss */
     .section--about .about__contact {
       padding-top: 900px;
       max-width: 815px;
       width: 100%;
       margin-left: auto; }
       @media (max-width: 1024px) {
-        /* line 235, ../scss/general/general.scss */
+        /* line 241, ../scss/general/general.scss */
         .section--about .about__contact {
           padding-top: 350px;
           max-width: 475px; } }
       @media (max-width: 768px) {
-        /* line 235, ../scss/general/general.scss */
+        /* line 241, ../scss/general/general.scss */
         .section--about .about__contact {
           margin-left: unset;
           margin-bottom: 30px; } }
       @media (max-width: 390px) {
-        /* line 235, ../scss/general/general.scss */
+        /* line 241, ../scss/general/general.scss */
         .section--about .about__contact {
           padding-top: 300px; } }
-      /* line 255, ../scss/general/general.scss */
+      /* line 261, ../scss/general/general.scss */
       .section--about .about__contact p {
         font-size: 45px;
         line-height: 60px;
         font-weight: 300; }
         @media (max-width: 1024px) {
-          /* line 255, ../scss/general/general.scss */
+          /* line 261, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 27px;
             line-height: 34px;
             font-weight: 400; } }
         @media (max-width: 768px) {
-          /* line 255, ../scss/general/general.scss */
+          /* line 261, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 20px;
             line-height: 22px;
             font-weight: 300; } }
         @media (max-width: 390px) {
-          /* line 255, ../scss/general/general.scss */
+          /* line 261, ../scss/general/general.scss */
           .section--about .about__contact p {
             font-size: 17px;
             line-height: 19px; } }
-      /* line 278, ../scss/general/general.scss */
+      /* line 284, ../scss/general/general.scss */
       .section--about .about__contact a {
         -webkit-animation: blink 3s linear infinite;
         animation: blink 3s linear infinite; }
@@ -649,34 +657,34 @@ details, summary {
     color: #949494; }
   100% {
     color: #191919; } }
-  /* line 301, ../scss/general/general.scss */
+  /* line 307, ../scss/general/general.scss */
   .section--about .socials-about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 50px; }
-    /* line 305, ../scss/general/general.scss */
+    /* line 311, ../scss/general/general.scss */
     .section--about .socials-about .socials__link {
       color: #191919;
       font-size: 25px; }
       @media (max-width: 1024px) {
-        /* line 305, ../scss/general/general.scss */
+        /* line 311, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 23px; } }
       @media (max-width: 768px) {
-        /* line 305, ../scss/general/general.scss */
+        /* line 311, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 20px; } }
       @media (max-width: 390px) {
-        /* line 305, ../scss/general/general.scss */
+        /* line 311, ../scss/general/general.scss */
         .section--about .socials-about .socials__link {
           font-size: 17px; } }
-      /* line 321, ../scss/general/general.scss */
+      /* line 327, ../scss/general/general.scss */
       .section--about .socials-about .socials__link:after {
         background-color: #191919; }
 
-/* line 328, ../scss/general/general.scss */
+/* line 334, ../scss/general/general.scss */
 .about__background-img {
   max-width: 383px;
   width: 100%;
@@ -689,21 +697,21 @@ details, summary {
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
   @media (max-width: 1024px) {
-    /* line 328, ../scss/general/general.scss */
+    /* line 334, ../scss/general/general.scss */
     .about__background-img {
       visibility: hidden; } }
-  /* line 342, ../scss/general/general.scss */
+  /* line 348, ../scss/general/general.scss */
   .about__background-img img {
     position: relative;
     overflow: hidden;
     -webkit-transform: scale(1.01);
             transform: scale(1.01); }
 
-/* line 350, ../scss/general/general.scss */
+/* line 356, ../scss/general/general.scss */
 .section--jungles {
   background-color: #393939;
   color: #fff; }
-  /* line 354, ../scss/general/general.scss */
+  /* line 360, ../scss/general/general.scss */
   .section--jungles .noise {
     height: 100%;
     left: 0;
@@ -713,7 +721,7 @@ details, summary {
     top: 0;
     width: 100%;
     z-index: 0; }
-    /* line 364, ../scss/general/general.scss */
+    /* line 370, ../scss/general/general.scss */
     .section--jungles .noise div {
       position: absolute;
       inset: -500px;
@@ -789,12 +797,12 @@ details, summary {
   100% {
     -webkit-transform: translate(-100px, 100px);
     transform: translate(-100px, 100px); } }
-  /* line 430, ../scss/general/general.scss */
+  /* line 436, ../scss/general/general.scss */
   .section--jungles .jungles__title-wrap {
     position: fixed;
     z-index: 14;
     width: 100%; }
-    /* line 435, ../scss/general/general.scss */
+    /* line 441, ../scss/general/general.scss */
     .section--jungles .jungles__title-wrap div {
       display: block;
       width: 200%;
@@ -804,10 +812,10 @@ details, summary {
       -webkit-animation: moving 30s linear infinite;
       animation: moving 30s linear infinite; }
       @media (max-width: 768px) {
-        /* line 435, ../scss/general/general.scss */
+        /* line 441, ../scss/general/general.scss */
         .section--jungles .jungles__title-wrap div {
           height: 118px; } }
-      /* line 448, ../scss/general/general.scss */
+      /* line 454, ../scss/general/general.scss */
       .section--jungles .jungles__title-wrap div span {
         padding: 0 45px;
         width: 50%;
@@ -818,7 +826,7 @@ details, summary {
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
         @media (max-width: 768px) {
-          /* line 448, ../scss/general/general.scss */
+          /* line 454, ../scss/general/general.scss */
           .section--jungles .jungles__title-wrap div span {
             font-size: 110px;
             line-height: 110px;
@@ -833,7 +841,7 @@ details, summary {
     left: 0; }
   100% {
     left: -100%; } }
-  /* line 477, ../scss/general/general.scss */
+  /* line 483, ../scss/general/general.scss */
   .section--jungles .jungles {
     padding-right: 48px;
     padding-left: 48px;
@@ -841,32 +849,32 @@ details, summary {
     position: relative;
     z-index: 15; }
     @media (max-width: 768px) {
-      /* line 477, ../scss/general/general.scss */
+      /* line 483, ../scss/general/general.scss */
       .section--jungles .jungles {
         padding-left: 23px;
         padding-right: 23px;
         padding-top: 165px; } }
-    /* line 490, ../scss/general/general.scss */
+    /* line 496, ../scss/general/general.scss */
     .section--jungles .jungles__desc {
       max-width: 450px; }
       @media (max-width: 768px) {
-        /* line 490, ../scss/general/general.scss */
+        /* line 496, ../scss/general/general.scss */
         .section--jungles .jungles__desc {
           margin: 0 auto;
           text-align: center; } }
-      /* line 498, ../scss/general/general.scss */
+      /* line 504, ../scss/general/general.scss */
       .section--jungles .jungles__desc p {
         margin-bottom: 10px; }
-      /* line 502, ../scss/general/general.scss */
+      /* line 508, ../scss/general/general.scss */
       .section--jungles .jungles__desc a {
         color: #FF0000;
         text-decoration: underline;
         display: block;
         margin-top: 30px; }
-        /* line 508, ../scss/general/general.scss */
+        /* line 514, ../scss/general/general.scss */
         .section--jungles .jungles__desc a:hover {
           text-decoration: none; }
-    /* line 514, ../scss/general/general.scss */
+    /* line 520, ../scss/general/general.scss */
     .section--jungles .jungles__list {
       margin-top: 100px;
       display: -webkit-box;
@@ -879,10 +887,10 @@ details, summary {
           flex-wrap: wrap;
       width: 100%; }
       @media (max-width: 768px) {
-        /* line 514, ../scss/general/general.scss */
+        /* line 520, ../scss/general/general.scss */
         .section--jungles .jungles__list {
           margin-top: 60px; } }
-      /* line 524, ../scss/general/general.scss */
+      /* line 530, ../scss/general/general.scss */
       .section--jungles .jungles__list .jungles__item {
         width: 23%;
         margin-bottom: 150px;
@@ -894,39 +902,39 @@ details, summary {
             -ms-flex-direction: column;
                 flex-direction: column; }
         @media (max-width: 1024px) {
-          /* line 524, ../scss/general/general.scss */
+          /* line 530, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 43%; } }
         @media (max-width: 768px) {
-          /* line 524, ../scss/general/general.scss */
+          /* line 530, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item {
             width: 100%;
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
             margin-bottom: 50px; } }
-        /* line 540, ../scss/general/general.scss */
+        /* line 546, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
           margin-top: 50px; }
           @media (max-width: 768px) {
-            /* line 540, ../scss/general/general.scss */
+            /* line 546, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-2) {
               margin-top: 50px; } }
-        /* line 548, ../scss/general/general.scss */
+        /* line 554, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
           margin-top: 100px; }
           @media (max-width: 768px) {
-            /* line 548, ../scss/general/general.scss */
+            /* line 554, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n-1) {
               margin-top: 50px; } }
-        /* line 556, ../scss/general/general.scss */
+        /* line 562, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item:nth-child(4n) {
           margin-top: 150px; }
           @media (max-width: 768px) {
-            /* line 556, ../scss/general/general.scss */
+            /* line 562, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item:nth-child(4n) {
               margin-top: 50px; } }
-        /* line 564, ../scss/general/general.scss */
+        /* line 570, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item img {
           max-width: 400px;
           width: 100%;
@@ -934,24 +942,24 @@ details, summary {
           transition: -webkit-transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s;
           transition: transform 2.5s ease-out 0s, -webkit-transform 2.5s ease-out 0s; }
-        /* line 570, ../scss/general/general.scss */
+        /* line 576, ../scss/general/general.scss */
         .section--jungles .jungles__list .jungles__item-info {
           max-width: 400px;
           width: 100%; }
-          /* line 574, ../scss/general/general.scss */
+          /* line 580, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-title {
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 10px;
             margin-top: 10px; }
-          /* line 581, ../scss/general/general.scss */
+          /* line 587, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-date {
             font-size: 14px;
             color: #d1d1d1; }
-          /* line 586, ../scss/general/general.scss */
+          /* line 592, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-desc {
             max-width: 400px; }
-          /* line 590, ../scss/general/general.scss */
+          /* line 596, ../scss/general/general.scss */
           .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
             max-width: -webkit-fit-content;
             max-width: -moz-fit-content;
@@ -961,10 +969,10 @@ details, summary {
             color: #FF0000;
             text-decoration: underline; }
             @media (max-width: 768px) {
-              /* line 590, ../scss/general/general.scss */
+              /* line 596, ../scss/general/general.scss */
               .section--jungles .jungles__list .jungles__item-info .jungles__item-link {
                 margin-top: 15px; } }
-            /* line 601, ../scss/general/general.scss */
+            /* line 607, ../scss/general/general.scss */
             .section--jungles .jungles__list .jungles__item-info .jungles__item-link:hover {
               text-decoration: none; }
 

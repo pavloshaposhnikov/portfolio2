@@ -12,6 +12,8 @@
 
     @include media-mobile {
       padding-top: 170px;
+      align-items: center;
+      height: 100vh;
     }
 
     .general__subtitle {
@@ -39,6 +41,10 @@
 
   .projects {
     padding-top: 50px;
+
+    @include media-mobile {
+      padding-top: 0;
+    }
 
     &__item {
       @include flex-justify(space-between);
