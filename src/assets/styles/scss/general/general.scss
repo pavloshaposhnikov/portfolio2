@@ -11,7 +11,8 @@
     }
 
     @include media-mobile {
-      padding-top: 170px;
+      padding-top: 0;
+      padding-bottom: 0;
       align-items: center;
       height: 100vh;
     }
