@@ -352,15 +352,16 @@ details, summary {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 48px; }
 
-/* line 152, ../scss/layout/header/header.scss */
+/* line 153, ../scss/layout/header/header.scss */
 .socials-nav {
   margin-top: auto;
   margin-left: auto;
   padding-bottom: 48px; }
   @media (max-width: 768px) {
-    /* line 152, ../scss/layout/header/header.scss */
+    /* line 153, ../scss/layout/header/header.scss */
     .socials-nav {
       padding-bottom: 23px;
       margin-left: unset; } }
