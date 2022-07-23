@@ -363,7 +363,6 @@ details, summary {
   @media (max-width: 768px) {
     /* line 153, ../scss/layout/header/header.scss */
     .socials-nav {
-      padding-bottom: 23px;
       margin-left: unset; } }
 
 /* line 3, ../scss/general/general.scss */
