@@ -2,6 +2,19 @@ $(function () {
     $("#included__header").load("./modules/header/index.html");
 });
 
+$(function() {
+    preloader();
+});
+
+// Preloader
+function preloader() {
+    document.body.classList.add('loaded-active');
+    window.setTimeout(() => {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded-active');
+    }, 3000);
+}
+
 // <1024px - start adaptivity
 const adaptiveBreakpoint = $(window).width() > 1024;
 
