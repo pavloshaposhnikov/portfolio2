@@ -52,9 +52,11 @@
       margin-bottom: 100px;
       position: relative;
       transition: opacity 0.2s;
+      max-width: max-content;
 
       @include media-tablet {
         flex-direction: column;
+        max-width: inherit;
       }
 
       @include media-mobile {
@@ -107,8 +109,12 @@
         }
       }
 
-      .projects__link:hover {
-        color: $grey;
+      .projects__link {
+        padding-left: 25px;
+
+        &:hover {
+          color: $grey;
+        }
       }
     }
 
@@ -120,7 +126,6 @@
       @include media-mobile {
         font-size: 29px;
         line-height: 29px;
-        padding-left: 24px;
       }
     }
 
