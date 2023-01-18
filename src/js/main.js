@@ -61,3 +61,11 @@ function aboutHover(e) {
             'opacity': 0,
         })
 };
+
+$(function() {
+    $('.projects__title').mouseenter(function() {
+        $('.cursor').addClass("is-active");
+    }).mouseleave(function () {
+        $('.cursor').removeClass("is-active");
+    });
+});
