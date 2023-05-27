@@ -23,11 +23,9 @@ if (adaptiveBreakpoint) {
     window.addEventListener('mousemove', function(e) {
         const cursor = document.querySelector('.cursor');
         const cursorAura = document.querySelector('.aura');
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-
-        cursorAura.style.left = e.clientX + 'px';
-        cursorAura.style.top = e.clientY + 'px';
+        
+        cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        cursorAura.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
     });
 }
 
