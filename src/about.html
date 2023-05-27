@@ -34,7 +34,7 @@
 <header id="included__header" class="header"></header>
 <main class="main">
     <!--========== Page Content ==========-->
-    <section class="section--about" onmousemove="aboutHover(event)">
+    <section class="section--about">
         <div class="about">
             <h2 class="title">about</h2>
             <div class="about__info">
@@ -54,9 +54,6 @@
                     <li class="socials__item">
                         <a href="https://www.instagram.com/hellherrr/" class="socials__link">Instagram</a>
                     </li>
-                    <li class="socials__item">
-                        <a href="https://twitter.com/piercepis" class="socials__link">Twitter</a>
-                    </li>
                 </ul>
                 <p class="about__info-author">Designed by <a href="#">Cris García.</a></p>
             </div>
@@ -73,6 +70,17 @@
     <!--========== \Page Content ==========-->
 </main>
 
+<script>
+    window.addEventListener('mousemove', function(e) {
+        const cursorAura = document.querySelector('.aura');
+        const aboutBackground = document.querySelector('.about__background-img');
+        aboutBackground.style.left = e.clientX + 'px';
+        aboutBackground.style.top = e.clientY + 'px';
+
+        cursorAura.style.opacity = '0';
+    });
+
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <!-- ADD JQUERY HERE -->
 <script
